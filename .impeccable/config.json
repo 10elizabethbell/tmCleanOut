@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "dark-glow",
+        "value": "#132840",
+        "createdAt": "2026-10-17T22:20:11.503Z",
+        "reason": "pitch-site finishing rule (Ellie): text over the moving scene gets a soft glow in the ground color for readability; navy ground halo, not a chromatic accent"
+      }
+    ]
+  }
+}
