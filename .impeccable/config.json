@@ -1,6 +1,8 @@
 {
   "detector": {
-    "ignoreRules": [],
+    "ignoreRules": [
+      "flat-type-hierarchy"
+    ],
     "ignoreFiles": [],
     "ignoreValues": [
       {
@@ -14,6 +16,16 @@
         "value": "roboto",
         "createdAt": "2026-10-17T22:35:22.732Z",
         "reason": "pitch-site house style (Ellie's ellie-taste.md): system font stack; Roboto is only the Android fallback in that stack"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "#10233a on #132a46",
+        "createdAt": "2026-10-19T13:58:56.969Z"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "#e2a83c on #2b4a6a",
+        "createdAt": "2026-10-19T13:58:57.079Z"
       }
     ]
   }

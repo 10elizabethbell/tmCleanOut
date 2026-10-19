@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T14:00:49.004137+00:00",
+  "title": "Design System: T&M Clean Out LLC",
+  "extensions": {
+    "colorMeta": {
+      "navy": {
+        "role": "neutral",
+        "displayName": "Winter Dusk Navy",
+        "canonical": "oklch(27% 0.05 252)",
+        "tonalRamp": [
+          "oklch(15% 0.05 252)",
+          "oklch(25% 0.05 252)",
+          "oklch(35% 0.05 252)",
+          "oklch(45% 0.05 252)",
+          "oklch(55% 0.05 252)",
+          "oklch(65% 0.05 252)",
+          "oklch(80% 0.05 252)",
+          "oklch(95% 0.05 252)"
+        ]
+      },
+      "navy-2": {
+        "role": "neutral",
+        "displayName": "Deep Dusk",
+        "canonical": "oklch(33% 0.06 252)",
+        "tonalRamp": [
+          "oklch(15% 0.06 252)",
+          "oklch(25% 0.06 252)",
+          "oklch(35% 0.06 252)",
+          "oklch(45% 0.06 252)",
+          "oklch(55% 0.06 252)",
+          "oklch(65% 0.06 252)",
+          "oklch(80% 0.06 252)",
+          "oklch(95% 0.06 252)"
+        ]
+      },
+      "dusk-top": {
+        "role": "neutral",
+        "displayName": "Dusk Sky (top)",
+        "canonical": "oklch(28% 0.055 250)",
+        "tonalRamp": [
+          "oklch(15% 0.055 250)",
+          "oklch(25% 0.055 250)",
+          "oklch(35% 0.055 250)",
+          "oklch(45% 0.055 250)",
+          "oklch(55% 0.055 250)",
+          "oklch(65% 0.055 250)",
+          "oklch(80% 0.055 250)",
+          "oklch(95% 0.055 250)"
+        ]
+      },
+      "dusk-mid": {
+        "role": "neutral",
+        "displayName": "Dusk Sky (mid)",
+        "canonical": "oklch(35% 0.07 250)",
+        "tonalRamp": [
+          "oklch(15% 0.07 250)",
+          "oklch(25% 0.07 250)",
+          "oklch(35% 0.07 250)",
+          "oklch(45% 0.07 250)",
+          "oklch(55% 0.07 250)",
+          "oklch(65% 0.07 250)",
+          "oklch(80% 0.07 250)",
+          "oklch(95% 0.07 250)"
+        ]
+      },
+      "dusk-low": {
+        "role": "neutral",
+        "displayName": "Dusk Sky (low)",
+        "canonical": "oklch(41% 0.06 248)",
+        "tonalRamp": [
+          "oklch(15% 0.06 248)",
+          "oklch(25% 0.06 248)",
+          "oklch(35% 0.06 248)",
+          "oklch(45% 0.06 248)",
+          "oklch(55% 0.06 248)",
+          "oklch(65% 0.06 248)",
+          "oklch(80% 0.06 248)",
+          "oklch(95% 0.06 248)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Night Ink",
+        "canonical": "oklch(25% 0.045 252)",
+        "tonalRamp": [
+          "oklch(15% 0.045 252)",
+          "oklch(25% 0.045 252)",
+          "oklch(35% 0.045 252)",
+          "oklch(45% 0.045 252)",
+          "oklch(55% 0.045 252)",
+          "oklch(65% 0.045 252)",
+          "oklch(80% 0.045 252)",
+          "oklch(95% 0.045 252)"
+        ]
+      },
+      "ice": {
+        "role": "neutral",
+        "displayName": "Window Ice",
+        "canonical": "oklch(95.5% 0.012 250)",
+        "tonalRamp": [
+          "oklch(15% 0.012 250)",
+          "oklch(25% 0.012 250)",
+          "oklch(35% 0.012 250)",
+          "oklch(45% 0.012 250)",
+          "oklch(55% 0.012 250)",
+          "oklch(65% 0.012 250)",
+          "oklch(80% 0.012 250)",
+          "oklch(95% 0.012 250)"
+        ]
+      },
+      "ice-2": {
+        "role": "neutral",
+        "displayName": "Ice Rule",
+        "canonical": "oklch(91.5% 0.02 250)",
+        "tonalRamp": [
+          "oklch(15% 0.02 250)",
+          "oklch(25% 0.02 250)",
+          "oklch(35% 0.02 250)",
+          "oklch(45% 0.02 250)",
+          "oklch(55% 0.02 250)",
+          "oklch(65% 0.02 250)",
+          "oklch(80% 0.02 250)",
+          "oklch(95% 0.02 250)"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Flyer Gold",
+        "canonical": "oklch(76% 0.14 75)",
+        "tonalRamp": [
+          "oklch(15% 0.14 75)",
+          "oklch(25% 0.14 75)",
+          "oklch(35% 0.14 75)",
+          "oklch(45% 0.14 75)",
+          "oklch(55% 0.14 75)",
+          "oklch(65% 0.14 75)",
+          "oklch(80% 0.14 75)",
+          "oklch(95% 0.14 75)"
+        ]
+      },
+      "gold-hover": {
+        "role": "primary",
+        "displayName": "Gold Lamp",
+        "canonical": "oklch(80% 0.13 78)",
+        "tonalRamp": [
+          "oklch(15% 0.13 78)",
+          "oklch(25% 0.13 78)",
+          "oklch(35% 0.13 78)",
+          "oklch(45% 0.13 78)",
+          "oklch(55% 0.13 78)",
+          "oklch(65% 0.13 78)",
+          "oklch(80% 0.13 78)",
+          "oklch(95% 0.13 78)"
+        ]
+      },
+      "gold-deep": {
+        "role": "primary",
+        "displayName": "Burnt Gold",
+        "canonical": "oklch(50% 0.11 70)",
+        "tonalRamp": [
+          "oklch(15% 0.11 70)",
+          "oklch(25% 0.11 70)",
+          "oklch(35% 0.11 70)",
+          "oklch(45% 0.11 70)",
+          "oklch(55% 0.11 70)",
+          "oklch(65% 0.11 70)",
+          "oklch(80% 0.11 70)",
+          "oklch(95% 0.11 70)"
+        ]
+      },
+      "focus": {
+        "role": "secondary",
+        "displayName": "Frost Blue",
+        "canonical": "oklch(58% 0.15 252)",
+        "tonalRamp": [
+          "oklch(15% 0.15 252)",
+          "oklch(25% 0.15 252)",
+          "oklch(35% 0.15 252)",
+          "oklch(45% 0.15 252)",
+          "oklch(55% 0.15 252)",
+          "oklch(65% 0.15 252)",
+          "oklch(80% 0.15 252)",
+          "oklch(95% 0.15 252)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Slate",
+        "canonical": "oklch(46% 0.04 250)",
+        "tonalRamp": [
+          "oklch(15% 0.04 250)",
+          "oklch(25% 0.04 250)",
+          "oklch(35% 0.04 250)",
+          "oklch(45% 0.04 250)",
+          "oklch(55% 0.04 250)",
+          "oklch(65% 0.04 250)",
+          "oklch(80% 0.04 250)",
+          "oklch(95% 0.04 250)"
+        ]
+      },
+      "mist": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "canonical": "oklch(85% 0.03 250)",
+        "tonalRamp": [
+          "oklch(15% 0.03 250)",
+          "oklch(25% 0.03 250)",
+          "oklch(35% 0.03 250)",
+          "oklch(45% 0.03 250)",
+          "oklch(55% 0.03 250)",
+          "oklch(65% 0.03 250)",
+          "oklch(80% 0.03 250)",
+          "oklch(95% 0.03 250)"
+        ]
+      },
+      "frost-steel": {
+        "role": "neutral",
+        "displayName": "Frost Steel",
+        "canonical": "oklch(59% 0.04 250)",
+        "tonalRamp": [
+          "oklch(15% 0.04 250)",
+          "oklch(25% 0.04 250)",
+          "oklch(35% 0.04 250)",
+          "oklch(45% 0.04 250)",
+          "oklch(55% 0.04 250)",
+          "oklch(65% 0.04 250)",
+          "oklch(80% 0.04 250)",
+          "oklch(95% 0.04 250)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(35% 0 0)",
+          "oklch(45% 0 0)",
+          "oklch(55% 0 0)",
+          "oklch(65% 0 0)",
+          "oklch(80% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; second line in gold; max 10ch on desktop."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings on ice and glass."
+      },
+      "headline-close": {
+        "displayName": "Headline (close)",
+        "purpose": "Larger step for the closing glass pane, max 12ch."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Step titles and small sub-heads, uppercase."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default prose in William's first-person voice."
+      },
+      "body-lead": {
+        "displayName": "Lead",
+        "purpose": "Ledes and pane copy, 34-44ch."
+      },
+      "label": {
+        "displayName": "Group Label",
+        "purpose": "Service-group fieldset legends only, Burnt Gold on ice."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "All pill buttons, sentence case."
+      }
+    },
+    "shadows": [
+      {
+        "name": "button-lift",
+        "value": "0 6px 16px -8px rgba(8,20,36,.55)",
+        "purpose": "Soft navy shadow under the gold primary pill only."
+      },
+      {
+        "name": "ground-halo",
+        "value": "text-shadow: 0 0 18px rgba(19,40,64,.9), 0 0 3px rgba(19,40,64,.6)",
+        "purpose": "Navy halo on text over a moving glass pane."
+      },
+      {
+        "name": "ice-halo",
+        "value": "text-shadow: 0 0 10px #f4f8fc, 0 0 4px #f4f8fc",
+        "purpose": "Ice halo for ink text sitting on frost (the wipe hint)."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px rgba(47,127,208,.45)",
+        "purpose": "Frost Blue ring on a focused service checkbox (.22 on hover)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state",
+        "value": "180ms",
+        "purpose": "Button background, color and border transitions."
+      },
+      {
+        "name": "press",
+        "value": "transform 120ms, scale(.98)",
+        "purpose": "Button press."
+      },
+      {
+        "name": "tick-spring",
+        "value": "200ms cubic-bezier(.2,1.6,.4,1)",
+        "purpose": "Gold tick springing into a checked box."
+      },
+      {
+        "name": "flake-puff",
+        "value": "650ms cubic-bezier(0.16,1,0.3,1)",
+        "purpose": "Six frost flakes bursting from a ticked box."
+      },
+      {
+        "name": "hint-fade",
+        "value": "opacity 600ms",
+        "purpose": "Wipe hint fading on first touch."
+      },
+      {
+        "name": "frost-regrow",
+        "value": "GROW 0.28/s, FIRST_GROW 1.1/s, WET_DRY 0.22/s, ghost wipe after 5s idle",
+        "purpose": "Frost-wipe canvas tuning."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Frost and seams drawn once at rest; smooth scroll and hint off."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "gutter",
+        "value": "700px"
+      },
+      {
+        "name": "groups-2",
+        "value": "760px"
+      },
+      {
+        "name": "steps-3",
+        "value": "860px"
+      },
+      {
+        "name": "deal-2",
+        "value": "900px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      },
+      {
+        "name": "groups-3",
+        "value": "1100px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Gold pill, the one primary action per screen.",
+      "html": "<div class=\"ds-navy\"><a class=\"ds-btn ds-btn-fill\" href=\"#\">Get a free estimate</a></div>",
+      "css": ":host{--navy:#132840;--ink:#10233a;--ice:#eaf1f8;--ice-2:#dbe6f2;--gold:#e2a83c;--gold-deep:#8a5a10;--focus:#2f7fd0;--muted:#46596f;--mist:#c3d3e4;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;border:2px solid var(--gold);font:800 17px/1.1 var(--font);text-decoration:none;cursor:pointer;transition:background-color .18s,color .18s,border-color .18s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.ds-navy{background:var(--navy);padding:24px}.ds-btn-fill{background:var(--gold);color:var(--ink);box-shadow:0 6px 16px -8px rgba(8,20,36,.55)}.ds-btn-fill:hover{background:#ecb751;border-color:#ecb751}"
+    },
+    {
+      "name": "Outline Button on Navy",
+      "kind": "button",
+      "refersTo": "button-outline-navy",
+      "description": "Secondary action on glass or navy: gold border, white text.",
+      "html": "<div class=\"ds-navy\"><a class=\"ds-btn ds-btn-line\" href=\"#\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z\"/></svg>Text William</a></div>",
+      "css": ":host{--navy:#132840;--ink:#10233a;--ice:#eaf1f8;--ice-2:#dbe6f2;--gold:#e2a83c;--gold-deep:#8a5a10;--focus:#2f7fd0;--muted:#46596f;--mist:#c3d3e4;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;border:2px solid var(--gold);font:800 17px/1.1 var(--font);text-decoration:none;cursor:pointer;transition:background-color .18s,color .18s,border-color .18s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.ds-navy{background:var(--navy);padding:24px}.ds-btn-line{background:transparent;color:#fff}.ds-btn-line:hover{background:rgba(226,168,60,.14)}"
+    },
+    {
+      "name": "Outline Button on Ice",
+      "kind": "button",
+      "refersTo": "button-outline-ice",
+      "description": "Secondary action on ice bands: ink border and text, Frost Blue focus.",
+      "html": "<div class=\"ds-ice\"><a class=\"ds-btn ds-btn-line-ice\" href=\"#\">Call 609-672-7518</a></div>",
+      "css": ":host{--navy:#132840;--ink:#10233a;--ice:#eaf1f8;--ice-2:#dbe6f2;--gold:#e2a83c;--gold-deep:#8a5a10;--focus:#2f7fd0;--muted:#46596f;--mist:#c3d3e4;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;border:2px solid var(--gold);font:800 17px/1.1 var(--font);text-decoration:none;cursor:pointer;transition:background-color .18s,color .18s,border-color .18s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.ds-ice{background:var(--ice);padding:24px}.ds-btn-line-ice{background:transparent;color:var(--ink);border-color:var(--ink);font-variant-numeric:tabular-nums}.ds-btn-line-ice:hover{background:rgba(16,35,58,.06)}.ds-btn-line-ice:focus-visible{outline-color:var(--focus)}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "input",
+      "refersTo": "service-row",
+      "description": "A ticked list row in the estimate picker: whole row is the target, navy box with a gold tick when checked.",
+      "html": "<fieldset class=\"ds-group\"><legend class=\"ds-legend\">Outside</legend><label class=\"ds-row\"><input type=\"checkbox\" checked><span class=\"ds-box\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"none\" stroke=\"#e2a83c\" stroke-width=\"3.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg></span><span>Power washing<span class=\"ds-sub\">Houses, decks, concrete, fences</span></span></label><label class=\"ds-row\"><input type=\"checkbox\"><span class=\"ds-box\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"none\" stroke=\"#e2a83c\" stroke-width=\"3.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg></span>Driveway seal coating</label></fieldset>",
+      "css": ":host{--navy:#132840;--ink:#10233a;--ice:#eaf1f8;--ice-2:#dbe6f2;--gold:#e2a83c;--gold-deep:#8a5a10;--focus:#2f7fd0;--muted:#46596f;--mist:#c3d3e4;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-group{border:0;margin:0;padding:24px;background:var(--ice);color:var(--ink);font:400 17px/1.55 var(--font);max-width:380px}.ds-legend{padding:0;margin-bottom:6px;font-weight:900;text-transform:uppercase;font-size:15px;letter-spacing:.08em;color:var(--gold-deep)}.ds-row{display:flex;align-items:center;gap:14px;min-height:52px;padding:6px 0;border-bottom:1px solid var(--ice-2);cursor:pointer;font-weight:700;line-height:1.25;position:relative}.ds-row input{position:absolute;width:1px;height:1px;opacity:0;margin:0}.ds-box{flex:none;width:28px;height:28px;border-radius:8px;border:2px solid #6b819a;background:#fff;display:grid;place-items:center;transition:background-color .15s,border-color .15s,box-shadow .15s}.ds-box svg{width:16px;height:16px;opacity:0;transform:scale(.6);transition:opacity .15s,transform .2s cubic-bezier(.2,1.6,.4,1)}.ds-row:hover .ds-box{border-color:var(--focus);box-shadow:0 0 0 3px rgba(47,127,208,.22)}.ds-row input:focus-visible+.ds-box{border-color:var(--focus);box-shadow:0 0 0 3px rgba(47,127,208,.45)}.ds-row input:checked+.ds-box{background:var(--navy);border-color:var(--navy)}.ds-row input:checked+.ds-box svg{opacity:1;transform:none}.ds-sub{display:block;font-weight:500;font-size:15px;color:var(--muted)}"
+    },
+    {
+      "name": "Step Marker",
+      "kind": "custom",
+      "refersTo": "step-marker",
+      "description": "Navy disc with a gold numeral beside an uppercase step title.",
+      "html": "<ol class=\"ds-steps\"><li><h3>Tell me what you need</h3><p>Text or call me. A photo of the job helps.</p></li><li><h3>Get a free estimate</h3><p>You know the price before any work starts.</p></li></ol>",
+      "css": ":host{--navy:#132840;--ink:#10233a;--ice:#eaf1f8;--ice-2:#dbe6f2;--gold:#e2a83c;--gold-deep:#8a5a10;--focus:#2f7fd0;--muted:#46596f;--mist:#c3d3e4;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-steps{list-style:none;margin:0;padding:24px;background:var(--ice);color:var(--ink);font:400 17px/1.55 var(--font);display:grid;gap:22px;counter-reset:s}.ds-steps li{counter-increment:s;display:grid;grid-template-columns:52px 1fr;gap:4px 16px;align-items:start}.ds-steps li::before{content:counter(s);grid-row:span 2;width:52px;height:52px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-weight:900;font-size:22px}.ds-steps h3{margin:0;font-size:20px;line-height:1.15;padding-top:4px;font-weight:900;text-transform:uppercase;letter-spacing:-.01em}.ds-steps p{margin:0;color:var(--muted)}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Navy bar: wordmark with gold ampersand left, gold tap-to-call number right; no menu.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-mark\" href=\"#\"><b>T<span>&amp;</span>M</b><small>Clean Out LLC</small></a><a class=\"ds-tel\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M6.6 2.5c.5-.4 1.3-.4 1.8.1l2.4 2.8c.5.6.5 1.4 0 2l-1.4 1.6c.9 2 2.6 3.7 4.6 4.6l1.6-1.4c.6-.5 1.4-.5 2 0l2.8 2.4c.5.5.6 1.3.1 1.8l-1.6 2.1c-.7.9-1.9 1.3-3 1-6-1.6-10.7-6.3-12.3-12.3-.3-1.1.1-2.3 1-3z\"/></svg>609-672-7518</a></header>",
+      "css": ":host{--navy:#132840;--ink:#10233a;--ice:#eaf1f8;--ice-2:#dbe6f2;--gold:#e2a83c;--gold-deep:#8a5a10;--focus:#2f7fd0;--muted:#46596f;--mist:#c3d3e4;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-top{background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 16px;font-family:var(--font)}.ds-mark{display:flex;flex-direction:column;line-height:1;text-decoration:none;color:#fff;font-weight:900;text-transform:uppercase}.ds-mark b{font-size:24px;letter-spacing:-.01em}.ds-mark b span{color:var(--gold)}.ds-mark small{font-size:11px;letter-spacing:.14em;color:var(--mist);margin-top:3px;font-weight:800}.ds-tel{display:flex;align-items:center;gap:8px;min-height:44px;color:var(--gold);font-weight:800;font-size:17px;text-decoration:none;font-variant-numeric:tabular-nums}.ds-tel:hover{text-decoration:underline}.ds-mark:focus-visible,.ds-tel:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Glass Pane with Seam",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Static snapshot of the signature: dusk-sky glass with gold window glow, haloed uppercase copy, ending in a snowdrift seam into ice. The live version adds the frost-wipe canvas.",
+      "html": "<div class=\"ds-pane\"><h2 class=\"ds-glow\">Empty house? I'll look after it.</h2><p class=\"ds-glow\">Foreclosed or just sitting empty, I'll clean it out, re-key the locks and winterize it.</p><svg class=\"ds-seam\" viewBox=\"0 0 400 44\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><path fill=\"#eaf1f8\" d=\"M0 24 C60 14 110 30 170 22 S290 12 340 24 S390 28 400 22 L400 44 L0 44Z\"/></svg></div><div class=\"ds-ice-tail\"></div>",
+      "css": ":host{--navy:#132840;--ink:#10233a;--ice:#eaf1f8;--ice-2:#dbe6f2;--gold:#e2a83c;--gold-deep:#8a5a10;--focus:#2f7fd0;--muted:#46596f;--mist:#c3d3e4;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-pane{position:relative;padding:40px 24px 64px;background:radial-gradient(60% 60% at 72% 95%,rgba(226,168,60,.2),rgba(226,168,60,0)),linear-gradient(180deg,#132a46 0%,#1e3d60 62%,#2b4a6a 100%);color:#fff;font:400 18px/1.55 var(--font)}.ds-pane h2{margin:0 0 20px;font-size:36px;font-weight:900;text-transform:uppercase;letter-spacing:-.01em;line-height:1.02;max-width:12ch}.ds-pane p{margin:0;color:#eef4fa;max-width:36ch}.ds-glow{text-shadow:0 0 18px rgba(19,40,64,.9),0 0 3px rgba(19,40,64,.6)}.ds-seam{position:absolute;left:0;right:0;bottom:0;width:100%;height:44px;display:block}.ds-ice-tail{height:24px;background:var(--ice)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Wiped Winter Window",
+    "overview": "**Creative North Star: \"The Wiped Winter Window\"**\n\nThe page is a frosted window at winter dusk. Navy bands are glass with a dark street behind them: rooftops, a few gold-lit windows, snow on the ground. Frost ferns grow in from the edges and the visitor wipes them away with a finger or cursor. Meltwater drops run down the cleared glass, and the frost slowly grows back. Between the glass panes sit pale ice reading bands where the real content lives: the full service list, the steps, the discounts. The metaphor matches the job. T&M leaves a house empty, clean and ready for the cold, and the page lets you clear the glass the same way.\n\nThe pacing is dense and plain. Big, heavy, uppercase system-sans headlines, short first-person copy in William's voice, and one gold call to action per screen. Decoration only comes from the winter world: frost, drops, snowdrift and icicle seams. There are no stock photos, icon-card grids or review carousels. The page is a working tool (tick jobs, send a text), and the weather around it is the personality.\n\nRejected outright: a black ground (the flyer's black panel does not carry over), cards for services, and any warm accent other than the flyer's gold.",
+    "keyCharacteristics": [
+      "Navy dusk glass bands alternate with ice reading bands, separated by animated SVG snowdrift and icicle seams, never by straight lines.",
+      "The frost-wipe canvas is the signature element. Every navy pane carries one, and text always sits on glass that is already clear.",
+      "Heavy uppercase system sans (900) for every heading. The owner chose this house style on purpose.",
+      "Gold is trim only: the lit phone number, the primary pill button, the ampersand, the second hero line, step numbers and check ticks.",
+      "Services appear as one long ticked list grouped under three plain labels, and the selection becomes a pre-filled text message."
+    ],
+    "rules": [
+      {
+        "name": "The Never-Black Rule",
+        "body": "The darkest ground is Winter Dusk Navy. No surface, band or overlay goes to black or near-neutral grey. Dark means dusk, not night.",
+        "section": "colors"
+      },
+      {
+        "name": "The Gold-Is-Light Rule",
+        "body": "Gold shows up as small lit things (a number, a pill, a tick, a lit window) and never as a band or large field. If gold covers more of a screen than the primary button does, it has stopped being trim.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Rings Rule",
+        "body": "Focus is gold on navy and Frost Blue on ice. Never put a gold ring on an ice ground.",
+        "section": "colors"
+      },
+      {
+        "name": "The Weight-Not-Face Rule",
+        "body": "Hierarchy comes from size and weight in a single system stack. Do not add a second family.",
+        "section": "typography"
+      },
+      {
+        "name": "The Shouting-Stops-At-Headings Rule",
+        "body": "Uppercase belongs to headings, the wordmark and group legends. Buttons, list items and prose stay in sentence case, in William's voice.",
+        "section": "typography"
+      },
+      {
+        "name": "The Clear-Glass Rule",
+        "body": "Text on a pane never relies on its halo alone. The frost mask is cleared around every `[data-clear]` element's line boxes and buttons, so copy always sits on clear glass and the halo is the backup.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Halo-Matches-Ground Rule",
+        "body": "Text halos use the ground color they protect (navy on glass, ice on frost), never an accent.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do alternate dusk-glass panes and ice reading bands, and join every glass-to-ice change with a seam (snowdrift when leaving a pane, icicle eave when entering one).",
+      "Do give every new navy pane the frost-wipe canvas and mark its copy and buttons `data-clear` so the frost stays off them.",
+      "Do set headings in the system stack at 900, uppercase, line-height 1.02, -0.01em tracking.",
+      "Do keep gold to small lit elements: one gold pill per screen, the phone number, the ampersand, step numerals, ticks.",
+      "Do use the gold focus ring on navy and the Frost Blue (#2f7fd0) ring on ice.",
+      "Do make every contact action a real `tel:` or `sms:` link with a pre-filled body, at least 56px tall for buttons and 44px for links, with tabular figures on numbers.",
+      "Do put text halos in the ground color (navy on glass, ice on frost) and honor `prefers-reduced-motion` by drawing frost and seams once at rest."
+    ],
+    "donts": [
+      "Don't use black or neutral grey as a ground. The darkest surface is Winter Dusk Navy (#132840).",
+      "Don't use gold as a band, large field or body-text color on ice. Use Burnt Gold (#8a5a10) where gold-family text has to sit on ice.",
+      "Don't show services as icon cards or tiles. They are one ticked list under plain group labels.",
+      "Don't separate bands with straight rules or hard color cuts where a seam belongs.",
+      "Don't add a second typeface or a webfont. The system stack is the house style.",
+      "Don't add stock photos, invented before/afters, reviews or a logo mark. The world comes from the frost scene, and the name is set as a wordmark.",
+      "Don't set buttons, list items or prose in uppercase."
+    ]
+  }
+}
