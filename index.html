@@ -88,7 +88,7 @@ svg.i{width:1em;height:1em;flex:none}
 .promise{font-size:clamp(17px,4.6vw,20px);line-height:1.5;max-width:34ch;color:#eef4fa;margin-bottom:24px}
 .hero .btns{display:flex;flex-direction:column;gap:12px;width:100%;max-width:420px}
 .facts{margin-top:18px;font-size:15px;font-weight:700;color:var(--mist);letter-spacing:.01em}
-.facts span{color:var(--mist);padding:0 6px}
+.facts span{color:var(--mist);padding:0 2px}
 .facts .nw{white-space:nowrap;color:inherit;padding:0}
 .hint{position:absolute;z-index:3;right:var(--pad);bottom:56px;margin:0;font-size:15px;font-weight:800;color:var(--ink);text-shadow:0 0 10px #f4f8fc,0 0 4px #f4f8fc;pointer-events:none;transition:opacity .6s}
 .hint.gone{opacity:0}
@@ -222,7 +222,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <a class="btn btn-fill" href="#estimate">Get a free estimate</a>
       <a class="btn btn-line" data-sms="Hi William, I found T&M Clean Out online. I'd like a free estimate. " href="sms:+16096727518"><svg class="i" aria-hidden="true"><use href="#i-text"/></svg>Text William</a>
     </div>
-    <p class="facts glow" data-clear><span class="nw">Fully insured</span><span aria-hidden="true">·</span><span class="nw">Family owned</span><span aria-hidden="true">·</span><span class="nw">Free estimates</span></p>
+    <p class="facts glow" data-clear><span class="nw">Fully insured</span> <span aria-hidden="true">·</span> <span class="nw">Family owned</span> <span aria-hidden="true">·</span> <span class="nw">Free estimates</span></p>
   </div>
   <p class="hint" aria-hidden="true">Wipe the glass</p>
 </section>
@@ -474,7 +474,7 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
   function paintFrost(g, hz, w, h, seed){
     var r = rng(seed * 3 + 1);
     var phone = w < 700;
-    hz.fillStyle = phone ? 'rgba(222,233,245,.45)' : 'rgba(222,233,245,.6)'; hz.fillRect(0, 0, w, h);
+    hz.fillStyle = phone ? 'rgba(226,236,247,.58)' : 'rgba(222,233,245,.6)'; hz.fillRect(0, 0, w, h);
     for (var i = 0; i < w * h / 14; i++){
       var a = r(); hz.fillStyle = a < 0.5 ? 'rgba(255,255,255,' + (0.08 + a * 0.3) + ')' : 'rgba(160,185,210,' + (a - 0.5) * 0.25 + ')';
       hz.fillRect(r() * w, r() * h, 1 + r(), 1 + r());
@@ -501,7 +501,7 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
       }
     }
     // phones: many small ferns knit into frost; a few big ones read as stamps
-    var n = phone ? w * h / 3500 : Math.max(26, Math.min(110, w * h / 9000)), ferns = [];
+    var n = phone ? w * h / 2400 : Math.max(26, Math.min(110, w * h / 9000)), ferns = [];
     for (var f = 0; f < n; f++){
       // seed points along the edges, pointing inward
       var q = r(), side = phone ? (q < 0.6 ? 0 : q < 0.7 ? 1 : q < 0.85 ? 2 : 3) : q * 4 | 0, x, y, ang;
@@ -565,7 +565,7 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
       var fg = fc.getContext('2d'); fg.drawImage(frost, 0, 0, gw * cell * dpr, gh * cell * dpr, 0, 0, gw, gh);
       var fd = fg.getImageData(0, 0, gw, gh).data;
       for (var fi = 0; fi < gw * gh; fi++) fern[fi] = fd[fi * 4 + 3] / 255;
-      var reach = W < 700 ? Math.max(80, Math.min(160, Math.min(W, H) * cfg.reach * 1.2)) : Math.max(120, Math.min(360, Math.min(W, H) * cfg.reach * 1.5));
+      var reach = W < 700 ? Math.max(isHero ? 80 : 110, Math.min(isHero ? 160 : 190, Math.min(W, H) * cfg.reach * (isHero ? 1.2 : 1.7))) : Math.max(120, Math.min(360, Math.min(W, H) * cfg.reach * 1.5));
       for (var j = 0; j < gh; j++) for (var i = 0; i < gw; i++){
         var x = i * cell, y = j * cell, n = j * gw + i;
         var ed = Math.min(x, W - x, y * 1.15, (H - y) * (W < 700 ? 0.42 : 0.7));   // heavier along the bottom, lighter at the top
@@ -587,15 +587,17 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
       return true;
     }
 
-    function wipe(x, y, R){
+    function wipe(x, y, R, wetAmt){
+      if (wetAmt === undefined) wetAmt = 1;
       var i0 = Math.max(0, ((x - R) / cell) | 0), i1 = Math.min(gw - 1, ((x + R) / cell) | 0);
       var j0 = Math.max(0, ((y - R) / cell) | 0), j1 = Math.min(gh - 1, ((y + R) / cell) | 0);
       var melted = 0;
       for (var j = j0; j <= j1; j++) for (var i = i0; i <= i1; i++){
-        var d = Math.hypot(i * cell - x, j * cell - y) / R; if (d >= 1) continue;
-        var n = j * gw + i, keep = smooth(0.72, 1, d);
+        var n = j * gw + i, d = Math.hypot(i * cell - x, j * cell - y) / R + grain[n] * 1.6;   // the frost breaks up the wipe's edge
+        if (d >= 1) continue;
+        var keep = smooth(0.55, 1, d);
         melted += cov[n] * (1 - keep);
-        cov[n] *= keep; wet[n] = Math.max(wet[n], 1 - d * d);
+        cov[n] *= keep; wet[n] = Math.max(wet[n], (1 - d * d) * wetAmt);
       }
       return melted;
     }
@@ -621,7 +623,7 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
           var cx = Math.min(lane - A / 2, W * (0.42 + 0.18 * Math.sin(cyc * 1.7)));
           var cy = Math.min(H * (W < 700 ? 0.8 : 0.78), (ghostY || H) - R * 1.2) + sn * R * 0.3 - R * 0.3;
           cur = [cx - A / 2 + A * u, cy + H * 0.03 * Math.sin(Math.PI * u)];
-          R *= W < 700 ? 1.15 : 1;
+          R *= (W < 700 ? 1.15 : 1) * (0.8 + 0.35 * Math.sin(Math.PI * u * 2 + cyc * 2.3) * Math.sin(Math.PI * pr));
         } else lastBrush = null;
       }
       if (hint && touched > 0 && !hint.classList.contains('gone')) hint.classList.add('gone');
@@ -658,7 +660,7 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
           if (Math.random() < dt * 0.9) p.stick = 0.1 + Math.random() * 0.5;
           var gi = (p.x / cell) | 0, gj = (p.y / cell) | 0;
           if (gi >= 0 && gi < gw && gj >= 0 && gj < gh){ var q = gj * gw + gi; if (cov[q] > 0.25) p.r = Math.min(6.5, p.r + cov[q] * 0.08); }
-          wipe(p.x, p.y - p.r, Math.max(cell * 1.2, p.r * 1.25));
+          wipe(p.x, p.y - p.r, Math.max(cell * 0.8, p.r * 0.55), 0.2);   // a narrow trail that fogs back quickly
         }
         if (p.y > H + 12) drops.splice(d, 1);
       }
@@ -671,7 +673,7 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
       for (var k = 0, L = cov.length; k < L; k++){
         var c = cov[k] + grain[k];
         data[k * 4 + 3] = smooth(0.18, 0.42, c + 0.22 * fern[k]) * 255;   // spines poke ahead of the haze
-        dataH[k * 4 + 3] = smooth(0.5, 0.85, c - 0.08 * fern[k]) * 255;
+        dataH[k * 4 + 3] = smooth(0.52, 0.72, c - 0.08 * fern[k]) * 255;   // haze fills in firmly, never a grey smoke
       }
       mctx.putImageData(img, 0, 0); mhctx.putImageData(imgH, 0, 0);
       [[wctx, frost, mask], [hctx, haze, maskH]].forEach(function(L){
@@ -747,10 +749,12 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
     }
     function layout(){
       cicles = [];
-      var n = Math.round(W / 1000 * ICICLES) + 2;
+      var n = Math.round(W / 1000 * ICICLES * 1.6) + 3;
       for (var i = 0; i < n; i++){
-        var x = (i + 0.2 + hash(i + seed) * 0.6) * W / n;
-        cicles.push({x: x, len: 8 + hash(i * 3.1 + seed) * 18, wid: 4 + hash(i * 5.7 + seed) * 3, bend: (hash(i * 9.3) - 0.5) * 3, grow: 1.2 + hash(i * 2.2 + seed) * 2.3, age: hash(i * 4.4) * 2});
+        var x = (i + hash(i + seed)) * W / n;
+        if (noise(x * 0.006 + seed) < -0.15) continue;           // gaps between clusters
+        var l = hash(i * 3.1 + seed); l = 3 + l * l * l * 34;      // mostly stubs, a few long ones
+        cicles.push({x: x, len: l, wid: 2.5 + l * 0.16 + hash(i * 5.7 + seed) * 2, bend: (hash(i * 9.3) - 0.5) * l * 0.12, grow: 1.2 + hash(i * 2.2 + seed) * 2.3, age: hash(i * 4.4) * 2, drips: l > 12});
       }
     }
     function draw(t, dt){
@@ -770,6 +774,7 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
               ' Q' + (c.x + c.wid * 0.25 + c.bend * 0.5).toFixed(1) + ' ' + (y0 + c.len * 0.5).toFixed(1) + ' ' + (c.x + c.wid / 2).toFixed(1) + ' ' + y0.toFixed(1) + 'Z';
         c.age += dt;
         var k = Math.min(1, c.age / c.grow), r = 0.6 + k * 1.6;
+        if (!c.drips) return;
         if (k >= 1 && falling.length < MAX_FALLING){ falling.push({x: tipX, y: tipY + r, v: 0, r: r}); c.age = 0; c.grow = 1.2 + Math.random() * 2.3; }
         else dd += 'M' + (tipX - r).toFixed(1) + ' ' + (tipY + r * 0.6).toFixed(1) + 'a' + r.toFixed(2) + ' ' + (r * 1.2).toFixed(2) + ' 0 1 0 ' + (r * 2).toFixed(2) + ' 0a' + r.toFixed(2) + ' ' + (r * 1.2).toFixed(2) + ' 0 1 0 ' + (-r * 2).toFixed(2) + ' 0Z';
       });
