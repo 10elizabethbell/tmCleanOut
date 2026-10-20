@@ -6,47 +6,6 @@
     "ignoreFiles": [],
     "ignoreValues": [
       {
-        "rule": "overused-font",
-        "value": "roboto",
-        "createdAt": "2026-10-17T22:35:22.732Z",
-        "reason": "pitch-site house style (Ellie's ellie-taste.md): system font stack; Roboto is only the Android fallback in that stack"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "24px",
-        "createdAt": "2026-10-19T14:02:36.126Z"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "11px",
-        "createdAt": "2026-10-19T14:02:36.203Z"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "16px",
-        "createdAt": "2026-10-19T14:02:36.276Z"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "22px",
-        "createdAt": "2026-10-19T14:02:36.349Z"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "14px",
-        "createdAt": "2026-10-19T14:02:36.422Z"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgb(27, 91, 194)",
-        "createdAt": "2026-10-19T14:02:36.495Z"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "#1750ad",
-        "createdAt": "2026-10-19T14:02:36.567Z"
-      },
-      {
         "rule": "repeating-stripes-gradient",
         "value": "*",
         "files": [
