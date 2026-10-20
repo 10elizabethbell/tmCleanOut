@@ -99,7 +99,7 @@ section{padding:64px 0}
 /* ---------- Hero ---------- */
 .hero{padding:0;position:relative;background-color:var(--navy);background-image:var(--texture);color:var(--on-dark);overflow:hidden}
 .hero-copy{position:relative;z-index:1;display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:72px}
-.hero h1{color:#fff;font-size:clamp(42px,11.4vw,80px);line-height:1.02;max-width:13ch}
+.hero h1{color:#fff;font-size:clamp(42px,min(11.4vw,13svh),80px);line-height:1.02;max-width:13ch}
 /* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
 .hero h1 .w{display:inline-block;white-space:nowrap}
 .hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}

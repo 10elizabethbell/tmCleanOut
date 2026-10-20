@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Static single-file HTML/CSS/JS (`index.html`), no frameworks, no tracking, system font stack. Hosted on GitHub Pages (`https://10elizabethbell.github.io/tmCleanOut/`). Set by Ellie's pitch-site pipeline, not asked per project.
+Static single-file HTML/CSS/JS (`index.html`), no frameworks, no tracking. Headings in Cal Sans (Google Fonts), body in the system stack (calm band style, 2026-10-19). Hosted on GitHub Pages (`https://10elizabethbell.github.io/tmCleanOut/`). Set by Ellie's pitch-site pipeline, not asked per project.
 
 ## Users
 
