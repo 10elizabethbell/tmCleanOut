@@ -3,816 +3,534 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>T&amp;M Clean Out LLC | Clean outs, cleaning, power washing | Burlington County, NJ</title>
-<meta name="description" content="Clean outs, deep cleaning, power washing, painting, sealing and winterizing. Family owned, fully insured, free estimates. Call or text William: 609-672-7518.">
-<meta name="theme-color" content="#132840">
+<title>T&amp;M Clean Out LLC · Clean outs, cleaning and property care · Burlington County, NJ</title>
+<meta name="description" content="William Jones and family: clean outs, deep cleaning, power washing, painting, driveway sealing and winterizing around Burlington County, NJ. Family owned, fully insured, free estimates. 609-672-7518.">
+<meta name="theme-color" content="#f4f6fb">
 <meta property="og:type" content="website">
-<meta property="og:title" content="T&amp;M Clean Out LLC">
-<meta property="og:description" content="Clean outs, deep cleaning, power washing, painting and winterizing. Family owned, fully insured, free estimates.">
+<meta property="og:title" content="T&amp;M Clean Out LLC · Cleared out and cleaned up in Burlington County">
+<meta property="og:description" content="Clean outs, deep cleaning, power washing, painting and winterizing from William Jones and family. Fully insured. Free estimates: 609-672-7518.">
 <meta property="og:url" content="https://10elizabethbell.github.io/tmCleanOut/">
 <meta property="og:image" content="https://10elizabethbell.github.io/tmCleanOut/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23132840'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='30' text-anchor='middle' fill='%23e2a83c'%3ET%26amp;M%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
 <style>
-/* ---------- tokens ---------- */
+/* ---------- Tokens ---------- */
 :root{
-  --navy:#132840;      /* page ground for dark bands: winter dusk, never black */
-  --navy-2:#1c3657;
-  --ink:#10233a;       /* text on light */
-  --ice:#eaf1f8;       /* light band ground: frosted glass in daylight */
-  --ice-2:#dbe6f2;
-  --gold:#e2a83c;      /* from the flyer's gold numbers */
-  --gold-deep:#8a5a10;
-  --focus:#2f7fd0;     /* form outline accent: not the gold fill */
-  --muted:#46596f;     /* secondary text on ice */
-  --mist:#c3d3e4;      /* secondary text on navy */
-  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  --pad:16px;
+  /* off-white paper, two navies standing in for the flyer's black panel, the flyer's gold */
+  --paper:#f4f6fb;       /* page ground */
+  --card:#ffffff;
+  --ink:#0f2238;         /* headings, text on gold */
+  --body:#26364a;        /* running text on light */
+  --soft:#4a5868;        /* secondary text on light */
+  --navy:#1b3a5c;        /* hero, close */
+  --deep:#0f2238;        /* services, footer (line texture) */
+  --on-dark:#f4f7fb;
+  --on-dark-soft:#c9d7ea;
+  --accent:#e2a83c;      /* flyer gold: fills only; text on it is --ink */
+  --accent-2:#ecbb5c;
+  --accent-ink:#7a5410;  /* gold as text on light (6.3:1) */
+  --field:#e6ecf5;       /* input and chip fill: visible on the white form card */
+  --line:rgba(15,34,56,.12);
+  --line-dark:rgba(255,255,255,.14);
+  --focus:#1b3a5c;       /* form hover/focus outline, distinct from the gold fill */
+  --error:#b3261e;
+  --texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);
+  --display:"Cal Sans","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --text:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --r-card:24px;--r-field:10px;--pill:999px;
+  --gutter:20px;
 }
-@media (min-width:700px){:root{--pad:32px}}
-
-/* ---------- base ---------- */
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;overscroll-behavior-y:none;scroll-behavior:smooth;scrollbar-color:var(--navy-2) var(--ice)}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hint{display:none}}
-body{margin:0;background:var(--ice);color:var(--ink);font:400 17px/1.55 var(--font)}
-::selection{background:var(--gold);color:var(--ink)}
-a{color:inherit;text-underline-offset:3px;text-decoration-thickness:2px}
-a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
-.on-ice a:focus-visible,.on-ice button:focus-visible{outline-color:var(--focus)}
-h1,h2,h3{margin:0;font-weight:900;text-transform:uppercase;letter-spacing:-.01em;line-height:1.02;text-wrap:balance}
-h2{font-size:clamp(30px,8vw,52px);margin-bottom:20px}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;font:16px/1.7 var(--text);color:var(--body);background:var(--paper)}
+::selection{background:var(--accent);color:var(--ink)}
+img,svg,canvas{display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.on-navy :focus-visible,.on-deep :focus-visible,.hero :focus-visible,footer :focus-visible{outline-color:var(--accent)}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.005em;color:var(--ink);text-wrap:balance}
+h2{font-size:clamp(30px,7.6vw,48px)}
 p{margin:0}
-.wrap{max-width:1180px;margin:0 auto;padding:0 max(var(--pad),env(safe-area-inset-right)) 0 max(var(--pad),env(safe-area-inset-left))}
-.skip{position:absolute;left:-999px;top:8px;background:var(--gold);color:var(--ink);padding:10px 14px;border-radius:8px;z-index:20}
-.skip:focus{left:8px}
-svg.i{width:1em;height:1em;flex:none}
 
-/* ---------- buttons ---------- */
-.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;border:2px solid var(--gold);font:800 17px/1.1 var(--font);text-decoration:none;text-align:center;cursor:pointer;transition:background-color .18s,color .18s,border-color .18s,transform .12s}
+/* ---------- Bands ---------- */
+section{padding:64px 0}
+.on-paper{background:var(--paper)}
+.on-light{background:var(--card)}
+.on-navy{background:var(--navy);color:var(--on-dark-soft)}
+.on-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft)}
+.on-navy h2,.on-deep h2,.on-navy h3,.on-deep h3{color:var(--on-dark)}
+.accent{color:var(--accent-ink)}
+.on-navy .accent,.on-deep .accent,.hero .accent{color:var(--accent)}
+.head{display:grid;gap:16px;justify-items:start;max-width:640px}
+.lede{font-size:clamp(17px,4.6vw,20px);color:var(--soft);max-width:38ch}
+.on-navy .lede,.on-deep .lede{color:var(--on-dark-soft)}
+
+/* Eyebrow: a few key headings only. A label, not a button. */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(15,34,56,.06);padding:9px 14px;border-radius:var(--pill)}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.hero .eyebrow,.on-navy .eyebrow,.on-deep .eyebrow{color:var(--on-dark);background:rgba(255,255,255,.12)}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}
 .btn:active{transform:scale(.98)}
-.btn-fill{background:var(--gold);color:var(--ink);box-shadow:0 6px 16px -8px rgba(8,20,36,.55)}
-@media (hover:hover){.btn-fill:hover{background:#ecb751;border-color:#ecb751}}
-.btn-line{background:transparent;color:#fff}
-@media (hover:hover){.btn-line:hover{background:rgba(226,168,60,.14)}}
-.on-ice .btn-line{color:var(--ink);border-color:var(--ink)}
-@media (hover:hover){.on-ice .btn-line:hover{background:rgba(16,35,58,.06)}}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+.btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,251,.7)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--ink)}
 
-/* ---------- header ---------- */
-.top{background:var(--navy);color:#fff;position:relative;z-index:3}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
-.mark{display:flex;flex-direction:column;justify-content:center;min-height:48px;line-height:1;text-decoration:none;font-weight:900;text-transform:uppercase}
-.mark b{font-size:24px;letter-spacing:-.01em}
-.mark b span{color:var(--gold)}
-.mark small{font-size:11px;letter-spacing:.14em;color:var(--mist);margin-top:3px;font-weight:800}
-.tel{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;color:var(--gold);font-weight:800;font-size:17px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
-.tel svg{font-size:18px}
-.tel:hover{text-decoration:underline}
+/* ---------- Header ---------- */
+.top{background:var(--paper);color:var(--ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
+.brand{display:flex;flex-direction:column;justify-content:center;min-height:44px;text-decoration:none;line-height:1}
+.brand b{font:400 23px/1 var(--display);letter-spacing:.01em}
+.brand b i{font-style:normal;color:var(--accent-ink)}
+.brand span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
+.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 18px/1 var(--display);text-decoration:none;white-space:nowrap}
+.tel svg{width:18px;height:18px;flex:none;color:var(--accent-ink)}
 
-/* ---------- frosted panes (hero, vacant, close) ---------- */
-.pane{position:relative;overflow:hidden;background:linear-gradient(180deg,#132a46 0%,#1e3d60 62%,#2b4a6a 100%);color:#fff;isolation:isolate}
-.pane canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:0;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
-.vacant canvas,.close canvas{touch-action:pan-y}   /* only the hero takes every direction; mid-page panes still scroll */
-.pane .wrap{position:relative;z-index:1;pointer-events:none}
-.pane .wrap>*{pointer-events:auto}
-.glow{text-shadow:0 0 18px rgba(19,40,64,.9),0 0 3px rgba(19,40,64,.6)}
+/* ---------- Hero ---------- */
+.hero{padding:0;position:relative;background-color:var(--navy);background-image:var(--texture);color:var(--on-dark);overflow:hidden}
+.hero-copy{position:relative;z-index:1;display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:72px}
+.hero h1{color:#fff;font-size:clamp(42px,11.4vw,80px);line-height:1.02;max-width:13ch}
+/* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
+.hero h1 .w{display:inline-block;white-space:nowrap}
+.hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
+@keyframes letter-in{to{opacity:1;transform:none}}
+.promise{font-size:clamp(17px,4.7vw,20px);line-height:1.5;color:var(--on-dark-soft);max-width:30ch}
+.promise b{color:var(--on-dark);font-weight:600}
+.actions{display:grid;gap:12px;width:100%;margin-top:4px}
 
-/* ---------- hero ---------- */
-.hero{min-height:min(calc(100vh - 64px),720px);min-height:min(calc(100svh - 64px),720px)}
-.hero .wrap{padding-top:34px;padding-bottom:150px;display:flex;flex-direction:column;align-items:flex-start}
-.hero h1{font-size:clamp(38px,10.6vw,104px);margin-bottom:16px}
-.hero h1 em{font-style:normal;color:var(--gold)}
-.promise{font-size:clamp(17px,4.6vw,20px);line-height:1.5;max-width:34ch;color:#eef4fa;margin-bottom:24px}
-.hero .btns{display:flex;flex-direction:column;gap:12px;width:100%;max-width:420px}
-.facts{margin-top:18px;font-size:15px;font-weight:700;color:var(--mist);letter-spacing:.01em}
-.facts span{color:var(--mist);padding:0 2px}
-.facts .nw{white-space:nowrap;color:inherit;padding:0}
-.hint{position:absolute;z-index:3;right:var(--pad);bottom:56px;margin:0;font-size:15px;font-weight:800;color:var(--ink);text-shadow:0 0 10px #f4f8fc,0 0 4px #f4f8fc;pointer-events:none;transition:opacity .6s}
-.hint.gone{opacity:0}
-@media (min-width:1024px){.hint{bottom:76px}}
-@media (min-width:700px){
-  .hero .btns{flex-direction:row;width:auto;max-width:none}
-  .hero .btn{padding:0 30px}
+/* ---------- Trust ---------- */
+.split .lede{margin-top:16px}
+.claims{list-style:none;margin:28px 0 0;padding:0;display:grid}
+.claims li{display:flex;align-items:center;gap:16px;padding:16px 0;font:400 clamp(20px,5.4vw,24px)/1.15 var(--display);color:var(--ink)}
+.claims li+li{border-top:1px solid var(--line)}
+.claims svg{width:40px;height:40px;flex:none;color:var(--accent-ink)}
+.fb{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:72px;padding:14px 16px 14px 22px;border-radius:var(--r-card);background:var(--card);color:var(--ink);text-decoration:none;font:400 clamp(18px,5vw,20px)/1.2 var(--display);max-width:440px;box-shadow:0 6px 18px rgba(15,34,56,.06)}
+.fb:hover,.fb:focus-visible{outline:none;background:var(--card)}
+.fb .lbl{display:flex;align-items:center;gap:14px}
+.fb .lbl svg{width:28px;height:28px;flex:none;color:#1877f2}
+.arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(15,34,56,.07);color:var(--ink);transition:background-color .2s,color .2s}
+.arrow svg{width:18px;height:18px}
+.fb:focus-visible .arrow{background:var(--accent);outline:3px solid var(--focus);outline-offset:3px}
+
+/* ---------- Services: rows on deep navy; each row texts William about that job ---------- */
+.groups{display:grid;gap:40px;margin-top:40px}
+.group h3{display:flex;align-items:center;gap:12px;font-size:clamp(22px,6vw,26px)}
+.group h3 svg{width:28px;height:28px;flex:none;color:var(--accent)}
+.rows{list-style:none;margin:12px 0 0;padding:0}
+.rows li+li{border-top:1px solid var(--line-dark)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:10px 0;color:var(--on-dark);text-decoration:none;font-size:18px;line-height:1.3}
+.row small{display:block;font-size:15px;color:var(--on-dark-soft);margin-top:2px}
+.row .arrow{background:rgba(255,255,255,.1);color:var(--on-dark)}
+.row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
+.row:focus-visible .arrow{background:var(--accent);color:var(--ink);outline:3px solid var(--accent);outline-offset:3px}
+.ask-any{margin-top:36px;font-size:18px}
+.ask-any a{color:var(--on-dark);text-underline-offset:4px;text-decoration-color:var(--accent);display:inline-block;padding:10px 0;margin:-10px 0}
+
+/* ---------- Empty homes ---------- */
+.vacant .wrap{display:grid;gap:24px;justify-items:start}
+.vacant .lede{max-width:44ch}
+.vacant .btn{width:100%}
+
+/* ---------- How it works (inside the estimate section) ---------- */
+.steps{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:20px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;counter-increment:s}
+.steps li::before{content:counter(s);width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:var(--ink);font:400 19px/1 var(--display)}
+.steps b{display:block;font:400 20px/1.2 var(--display);color:var(--ink);margin-top:2px;font-weight:400}
+.steps span{display:block;margin-top:4px;color:var(--soft)}
+
+/* ---------- Form ---------- */
+.ask .wrap{display:grid;gap:32px}
+form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px;box-shadow:0 10px 30px rgba(15,34,56,.07)}
+.field{display:grid;gap:8px;min-width:0}
+.field label,.field legend{font:400 18px/1.2 var(--display);color:var(--ink);padding:0}
+.field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--accent-ink);transition:border-color .15s}
+textarea{min-height:120px;resize:vertical}
+input::placeholder,textarea::placeholder{color:var(--soft)}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
+.chips input:focus-visible+label{border-color:var(--focus);outline:3px solid var(--focus);outline-offset:2px}
+.chips input:checked+label{background:var(--ink);color:#fff}
+.err{display:none;font-size:16px;color:var(--error)}
+.field.bad .err{display:block}
+.field.bad input[type=text],.field.bad textarea{border-color:var(--error)}  /* after :focus, so the error survives submit focusing the field */
+form .btn{width:100%}
+form .btn:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.after{font-size:16px;color:var(--soft)}
+.sent{display:grid;gap:12px;color:var(--ink);font-weight:600}
+#msgText{font-weight:400;min-height:110px}
+.sent p a{white-space:nowrap;display:inline-block;padding:11px 0;margin:-11px 0}
+@media (max-width:380px){.chips label{padding:0 14px}}
+@media (max-width:340px){.eyebrow{letter-spacing:0;padding:9px 12px;gap:8px}}
+
+/* ---------- Close ---------- */
+.close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft);max-width:40ch}
+.deal{margin-top:22px;max-width:44ch}
+.deal b{display:block;font:400 20px/1.2 var(--display);color:var(--on-dark);margin-bottom:6px;font-weight:400}
+.bigtel{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font:400 clamp(30px,9vw,52px)/1 var(--display);text-decoration:none;color:var(--on-dark);min-height:56px;white-space:nowrap}
+.bigtel svg{width:.8em;height:.8em;flex:none;color:var(--accent)}
+.area{margin-top:22px;max-width:40ch}
+
+/* ---------- Footer ---------- */
+footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
+footer .wrap{display:grid;gap:14px}
+.nw{white-space:nowrap}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none}
+
+/* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
+.float{display:none;position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;place-items:center;background:var(--accent);color:var(--ink);box-shadow:0 10px 28px rgba(8,20,36,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.js .float{display:grid}
+.float.on{transform:none}
+.float svg{width:26px;height:26px}
+.float:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
+
+/* ---------- Motion: one fade-up, only for things below the first screen ---------- */
+.js .rise{transition:opacity .4s ease-out,transform .4s ease-out}
+.js .rise.below{opacity:0;transform:translateY(12px)}
+
+/* ---------- Desktop ---------- */
+@media (min-width:760px){
+  :root{--gutter:40px}
+  .top .wrap{min-height:76px}
+  .brand b{font-size:26px}
+  .tel{font-size:20px}
+  section{padding:96px 0}
+  .hero-copy{padding-top:96px;padding-bottom:112px}
+  .promise{max-width:none}
+  .actions{grid-auto-flow:column;justify-content:start;width:auto}
+  .actions .btn{min-width:240px}
+  .vacant .btn{width:auto;min-width:280px}
 }
 @media (min-width:1024px){
-  .hero{min-height:min(calc(100vh - 64px),760px);min-height:min(calc(100svh - 64px),760px)}
-  .hero .wrap{padding-top:84px;padding-bottom:120px}
-  .hero h1{max-width:10ch}
+  .split{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr;column-gap:64px;align-items:start}
+  .split .claims{grid-column:2;grid-row:1/3;margin-top:0}
+  .split .fb{grid-column:1;grid-row:2}
+  .groups{grid-template-columns:repeat(3,1fr);gap:48px}
+  .vacant .wrap{grid-template-columns:1fr auto;align-items:end;column-gap:64px}
+  .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+  .ask .head{position:sticky;top:40px}
+  .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
+  .bigtel{margin-top:0}
 }
-
-/* ---------- seams: animated meltwater edge between bands ---------- */
-/* seams sit over the frosted pane's edge so the wave, not a straight line, ends the frost */
-.seam{--h:44px;display:block;height:var(--h);position:relative;z-index:2;pointer-events:none}
-.seam.after-pane{margin-top:calc(var(--h) * -1)}
-.seam.before-pane{margin-bottom:calc(var(--h) * -1)}
-.seam svg{display:block;width:100%;height:100%}
-@media (min-width:1024px){.seam{--h:64px}}
-
-/* ---------- estimate picker ---------- */
-.band{padding:40px 0 64px}
-@media (min-width:1024px){.band{padding:64px 0 96px}}
-.lede{font-size:18px;color:var(--muted);margin:-8px 0 28px;max-width:44ch}
-.groups{display:grid;gap:28px}
-@media (min-width:760px){.groups{grid-template-columns:1fr 1fr;column-gap:40px}}
-@media (min-width:1100px){.groups{grid-template-columns:repeat(3,1fr);column-gap:40px}}
-fieldset{border:0;margin:0;padding:0;min-width:0}
-legend{padding:0;margin-bottom:6px;font-weight:900;text-transform:uppercase;font-size:15px;letter-spacing:.08em;color:var(--gold-deep)}
-.row{display:flex;align-items:center;gap:14px;min-height:52px;padding:6px 0;border-bottom:1px solid var(--ice-2);cursor:pointer;font-weight:700;font-size:17px;line-height:1.25;-webkit-tap-highlight-color:transparent}
-.row input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
-.box{position:relative;flex:none;width:28px;height:28px;border-radius:8px;border:2px solid #6b819a;background:#fff;display:grid;place-items:center;transition:background-color .15s,border-color .15s,box-shadow .15s}
-.box svg{width:16px;height:16px;opacity:0;transform:scale(.6);transition:opacity .15s,transform .2s cubic-bezier(.2,1.6,.4,1)}
-@media (hover:hover){.row:hover .box{border-color:var(--focus);box-shadow:0 0 0 3px rgba(47,127,208,.22)}}
-.row input:focus-visible+.box{border-color:var(--focus);box-shadow:0 0 0 3px rgba(47,127,208,.45)}
-.row input:checked+.box{background:var(--navy);border-color:var(--navy)}
-.row input:checked+.box svg{opacity:1;transform:none}
-.box .flake{position:absolute;left:50%;top:50%;width:11px;height:11px;pointer-events:none;color:#6b819a;opacity:1;transition:none}
-@media (forced-colors:active){.box{border-color:CanvasText}.row input:checked+.box{background:Highlight}}
-.row .sub{display:block;font-weight:500;font-size:15px;color:var(--muted)}
-.send{margin-top:32px;display:grid;gap:12px;max-width:440px}
-.picked{font-weight:700;color:var(--muted);min-height:1.5em}
-@media (hover:hover){.send .btn:hover{outline:3px solid var(--focus);outline-offset:3px}}
-.send .btn:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
-.or{font-size:16px;color:var(--muted)}
-.or a{display:inline-block;padding:12px 0;margin:-12px 0;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums}
-
-/* ---------- vacant homes ---------- */
-.vacant{padding:56px 0 64px}
-.vacant .wrap{max-width:1180px}
-.vacant .copy{max-width:560px}
-.vacant p{font-size:18px;color:#eef4fa;margin-bottom:24px;max-width:40ch}
-.vacant .btn{max-width:420px}
-@media (min-width:1024px){.vacant{padding:96px 0}}
-
-/* ---------- steps ---------- */
-.steps{list-style:none;margin:0;padding:0;display:grid;gap:22px;counter-reset:s}
-@media (min-width:860px){.steps{grid-template-columns:repeat(3,1fr);gap:32px}}
-.steps li{counter-increment:s;display:grid;grid-template-columns:52px 1fr;gap:4px 16px;align-items:start}
-.steps li::before{content:counter(s);grid-row:span 2;width:52px;height:52px;border-radius:50%;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-weight:900;font-size:22px}
-.steps h3{font-size:20px;line-height:1.15;padding-top:4px}
-.steps p{color:var(--muted)}
-
-/* ---------- discounts + where ---------- */
-.deal{margin-top:56px;padding-top:40px;border-top:2px solid var(--ice-2);display:grid;gap:40px}
-@media (min-width:900px){.deal{grid-template-columns:1fr 1fr;gap:56px;align-items:start}}
-.deal h3{font-size:20px;margin-bottom:8px}
-.who{font-size:18px;font-weight:700;color:var(--ink);line-height:1.6}
-.who span{color:var(--muted);padding:0 4px}
-.where p{color:var(--muted);margin-bottom:20px}
-.btn.fb{border-color:#1b5bc2;color:#fff;background:#1b5bc2;max-width:420px}
-.btn.fb:hover{background:#1750ad;border-color:#1750ad}
-.fb svg{font-size:20px}
-
-/* ---------- proof ---------- */
-.proof{margin-top:48px;display:grid;gap:14px;max-width:440px}
-.proof p{font-size:18px;font-weight:700;color:var(--ink)}
-
-/* ---------- close ---------- */
-.close{padding:64px 0 72px;text-align:left}
-.close h2{font-size:clamp(34px,10vw,72px);max-width:12ch}
-.close p{font-size:18px;color:#eef4fa;margin-bottom:24px;max-width:36ch}
-.close .btn{max-width:420px}
-@media (min-width:1024px){.close{padding:112px 0 120px}}
-
-/* ---------- footer ---------- */
-footer{background:var(--navy);color:var(--mist);padding:32px 0 calc(32px + env(safe-area-inset-bottom));font-size:16px;border-top:1px solid rgba(195,211,228,.14)}
-footer .wrap{display:grid;gap:18px}
-@media (min-width:860px){footer .wrap{grid-template-columns:1.2fr 1fr 1fr;align-items:start}}
-footer b{color:#fff;font-weight:900;text-transform:uppercase}
-footer a{color:#fff;display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-variant-numeric:tabular-nums}
-footer ul{list-style:none;margin:0;padding:0}
-footer .copy{font-size:14px}
+/* hover styles only where there is a real pointer, so taps don't leave them stuck on */
+@media (hover:hover){
+.tel:hover{color:var(--accent-ink)}
+.btn-primary:hover{background:var(--accent-2);border-color:var(--accent-2)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.fb:hover .arrow,.row:hover .arrow{background:var(--accent);color:var(--ink)}
+.ask-any a:hover{color:var(--accent)}
+input[type=text]:hover,textarea:hover{border-color:var(--focus)}
+.chips label:hover{border-color:var(--focus)}
+form .btn:hover{outline:2px solid var(--focus);outline-offset:2px}
+.sent p a:hover{color:var(--accent-ink)}
+.bigtel:hover{color:var(--accent)}
+footer a:hover{color:var(--accent)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rise,.float,.btn{transition:none}
+  .js .rise.below{opacity:1;transform:none}
+  .hero h1 .c{animation:none;opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 <!--
-THESIS: A cleanout and property crew's site as a window in winter: frost ferns creep in from the glass edges and the visitor wipes the pane clear with a finger, the way T&M leaves a house: empty, clean, ready for the cold. Refuses the category default of a contractor template (stock truck photo, icon-card service grid, review carousel).
-OWN-WORLD: Winter dusk navy (#132840) bands, never black; frosted-glass ice (#eaf1f8) bands for reading; the flyer's gold (#e2a83c) as the only warm accent: the lit phone number, the primary button, a gold ampersand. Frost rendered as branching fern crystals over a dusk street of rooftops with a few gold windows; meltwater drops run down wiped glass. Heavy uppercase system sans (Ellie's house stack, deliberately overriding the craft floor's display-face rule); seams between bands are a rolling meltwater edge.
-STORY: I see every job William does in one list, I trust that a family-owned insured crew answers, I tick what I need and text it for a free estimate.
-FIRST VIEWPORT: Phone: header with wordmark left and gold tap-to-call number right; "Cleared out. Cleaned up." at ~50px over clear glass, promise line, a gold "Get a free estimate" button and an outlined "Text William" button, insured / family owned / free estimates line; frost thickest along the bottom and sides, wiping itself until touched.
-FORM: Candidate 4 of 7 (frosted window). Seed a150312c. Raises: Posada broadside -> services as one dense honest list, never cards; Nixie counter -> the lit number is the only warm accent in the header.
+THESIS: A family-owned crew that takes a house from full to empty to clean to sealed, shown in calm order (after lpmr.co.uk): the county in the headline, William's own promise, every job on his flyer one tap from a text.
+OWN-WORLD: Off-white paper, navy (#1b3a5c) and deep navy (#0f2238, faint diagonal lines) bands standing in for the flyer's black panel, the flyer's gold (#e2a83c) as the one warm accent (fills only; #7a5410 when it has to be text on light). Cal Sans display, system body at 16/1.7.
+STORY: The visitor sees who clears out and cleans up houses in Burlington County, trusts a fully insured family business with William's name on it, finds their job in the list and taps it, or fills in three fields that become a text to William.
+FIRST VIEWPORT: Paper header with the T&M wordmark left and the tap-to-call number top right. Navy hero with the line texture: eyebrow, "Cleared out and cleaned up in Burlington County.", one promise line, two pill buttons (Get a free estimate, Text William).
+FORM: house default, calm band style (calm-photo-style.md, 2026-10-19), no concept roll. No work photos exist (only the flyer), so the hero is the plain textured navy band. The earlier frosted-window world is in git history (commit 8051745).
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
-<a class="skip" href="#estimate">Skip to services</a>
-
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 2.5c.5-.4 1.3-.4 1.8.1l2.4 2.8c.5.6.5 1.4 0 2l-1.4 1.6c.9 2 2.6 3.7 4.6 4.6l1.6-1.4c.6-.5 1.4-.5 2 0l2.8 2.4c.5.5.6 1.3.1 1.8l-1.6 2.1c-.7.9-1.9 1.3-3 1-6-1.6-10.7-6.3-12.3-12.3-.3-1.1.1-2.3 1-3z"/></symbol>
-  <symbol id="i-text" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm3 6.2a1.3 1.3 0 1 0 0 .1zm5 0a1.3 1.3 0 1 0 0 .1zm5 0a1.3 1.3 0 1 0 0 .1z"/></symbol>
-  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></symbol>
-  <symbol id="i-flake" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2v20M3.3 7l17.4 10M3.3 17L20.7 7"/><path d="M9.5 3.8L12 6l2.5-2.2M9.5 20.2L12 18l2.5 2.2M3.8 10.3l3.3-.6-1-3.2M20.2 13.7l-3.3.6 1 3.2M3.8 13.7l3.3.6-1 3.2M20.2 10.3l-3.3-.6 1-3.2"/></g></symbol>
-  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="#e2a83c" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
-
-<header class="top" id="top">
+<header class="top">
   <div class="wrap">
-    <a class="mark" href="#top" aria-label="T&amp;M Clean Out LLC, back to top"><b>T<span>&amp;</span>M</b><small>Clean Out LLC</small></a>
-    <a class="tel" href="tel:+16096727518"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>609-672-7518</a>
+    <a class="brand" href="#" aria-label="T&amp;M Clean Out LLC, back to top"><b>T<i>&amp;</i>M</b><span>Clean Out LLC</span></a>
+    <a class="tel" href="tel:+16096727518"><svg aria-hidden="true"><use href="#i-phone"/></svg>609-672-7518</a>
   </div>
 </header>
 
-<main>
-<section class="pane hero" id="hero" data-pane="hero">
-  <canvas aria-hidden="true"></canvas>
-  <div class="wrap">
-    <h1 class="glow" data-clear>Cleared out. <em>Cleaned&nbsp;up.</em></h1>
-    <p class="promise glow" data-clear>I'm William Jones. My family and I treat your house like it's ours, from the garage to the driveway seal.</p>
-    <div class="btns" data-clear>
-      <a class="btn btn-fill" href="#estimate">Get a free estimate</a>
-      <a class="btn btn-line" data-sms="Hi William, I found T&M Clean Out online. I'd like a free estimate. " href="sms:+16096727518"><svg class="i" aria-hidden="true"><use href="#i-text"/></svg>Text William</a>
+<main id="top">
+<section class="hero" id="hero" aria-labelledby="h1">
+  <div class="wrap hero-copy">
+    <p class="eyebrow">Clean outs &amp; property care</p>
+    <h1 id="h1">Cleared out and cleaned up in <span class="accent">Burlington County.</span></h1>
+    <p class="promise">I'm <b>William Jones.</b> My family and I treat your house like it's ours.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#ask">Get a free estimate</a>
+      <a class="btn btn-ghost sms" data-job="" href="sms:+16096727518"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text William</a>
     </div>
-    <p class="facts glow" data-clear><span class="nw">Fully insured</span> <span aria-hidden="true">·</span> <span class="nw">Family owned</span> <span aria-hidden="true">·</span> <span class="nw">Free estimates</span></p>
   </div>
-  <p class="hint" aria-hidden="true">Wipe the glass</p>
 </section>
 
-<div class="seam after-pane" data-from="#2b4a6a" data-to="#eaf1f8" aria-hidden="true"></div>
+<section class="on-paper" aria-labelledby="h-trust">
+  <div class="wrap split">
+    <div class="rise">
+      <h2 id="h-trust">When you call, you get me.</h2>
+      <p class="lede">It's my name on the flyer and my family on the job, from the garage to the driveway seal.</p>
+    </div>
+    <ul class="claims">
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4l13 5v9c0 8.5-5.6 15.3-13 18-7.4-2.7-13-9.5-13-18V9z"/><path d="M14 20l4.5 4.5L27 16"/></svg>Fully insured</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 19 20 7l14 12"/><path d="M10 16v18h20V16"/><path d="M20 30s-6-3.6-6-7.6a3.2 3.2 0 0 1 6-1.6 3.2 3.2 0 0 1 6 1.6c0 4-6 7.6-6 7.6z"/></svg>Family owned</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="6" width="24" height="30" rx="3"/><path d="M15 6V4h10v2M14 16h12M14 23h12M14 30h7"/></svg>Free estimates</li>
+    </ul>
+    <a class="fb rise" href="https://www.facebook.com/groups/1772980119690817/permalink/4636261316696002/" rel="noopener">
+      <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>See me on Facebook</span>
+      <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+    </a>
+  </div>
+</section>
 
-<section class="band on-ice" id="estimate" aria-labelledby="h-estimate">
+<section class="on-deep" id="services" aria-labelledby="h-svc">
   <div class="wrap">
-    <h2 id="h-estimate">Everything I do</h2>
-    <p class="lede">Tap what you need and text me the list.</p>
-    <form class="groups" id="picker" onsubmit="return false">
-      <fieldset>
-        <legend>Clean outs and empty homes</legend>
-        <label class="row"><input type="checkbox" value="Foreclosed home clean out"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Foreclosed homes</label>
-        <label class="row"><input type="checkbox" value="Garage clean out"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Garages</label>
-        <label class="row"><input type="checkbox" value="Moving"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Moving</label>
-        <label class="row"><input type="checkbox" value="Re-key locks"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Re-keying</label>
-        <label class="row"><input type="checkbox" value="Winterize home"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Winterizing</label>
+    <div class="head rise">
+      <p class="eyebrow">Everything I do</p>
+      <h2 id="h-svc">Empty it. Clean it. <span class="accent">Seal it.</span></h2>
+      <p class="lede">Tap a job to text me about it.</p>
+    </div>
+    <div class="groups">
+      <div class="group rise">
+        <h3><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h22v14H5z"/><path d="M5 12l3-6h16l3 6M12 18h8"/></svg>Clean outs</h3>
+        <ul class="rows">
+          <li><a class="row sms" data-job="a foreclosed home clean out" href="sms:+16096727518">Foreclosed homes<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row sms" data-job="a garage clean out" href="sms:+16096727518">Garages<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row sms" data-job="moving" href="sms:+16096727518">Moving<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row sms" data-job="re-keying a home" href="sms:+16096727518">Re-keying<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row sms" data-job="winterizing a home" href="sms:+16096727518">Winterizing<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+        </ul>
+      </div>
+      <div class="group rise">
+        <h3><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15 16 5l12 10"/><path d="M8 12v15h16V12"/><path d="M13 27v-7h6v7"/></svg>Inside</h3>
+        <ul class="rows">
+          <li><a class="row sms" data-job="a deep house cleaning" href="sms:+16096727518">Deep house cleaning<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row sms" data-job="cleaning windows and blinds" href="sms:+16096727518">Windows and blinds<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row sms" data-job="shampooing carpets" href="sms:+16096727518">Carpet shampooing<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row sms" data-job="waxing and buffing floors" href="sms:+16096727518">Floor wax and buff<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row sms" data-job="interior painting" href="sms:+16096727518">Interior painting<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+        </ul>
+      </div>
+      <div class="group rise">
+        <h3><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="12" r="5"/><path d="M16 2v2M16 20v2M6 12H4M28 12h-2M8.9 4.9l1.4 1.4M21.7 4.9l-1.4 1.4"/><path d="M3 28h26M7 24h18"/></svg>Outside</h3>
+        <ul class="rows">
+          <li><a class="row sms" data-job="power washing" href="sms:+16096727518"><span>Power washing<small>Houses, decks, concrete, fences</small></span><span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row sms" data-job="sanding and staining a deck" href="sms:+16096727518">Deck sanding and staining<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row sms" data-job="driveway seal coating" href="sms:+16096727518">Driveway seal coating<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row sms" data-job="sealing EP Henry pavers" href="sms:+16096727518">EP Henry paver sealing<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row sms" data-job="exterior painting" href="sms:+16096727518">Exterior painting<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row sms" data-job="tree service and stump grinding" href="sms:+16096727518">Tree service and stump grinding<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row sms" data-job="boat bottom painting" href="sms:+16096727518">Boat bottom painting<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="ask-any rise">Don't see your job? <a href="#ask">Ask me anyway.</a></p>
+  </div>
+</section>
+
+<section class="on-light vacant" id="vacant" aria-labelledby="h-vacant">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">Empty homes</p>
+      <h2 id="h-vacant">Empty house? I'll look after it.</h2>
+      <p class="lede">Foreclosed or just sitting empty, I'll clean it out, re-key the locks and winterize it before the first freeze, and look after it like it's my own.</p>
+    </div>
+    <a class="btn btn-primary sms rise" id="vacantBtn" data-job="an empty house: clean out, re-key and winterizing" href="sms:+16096727518"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text me about a house</a>
+  </div>
+</section>
+
+<section class="on-paper ask" id="ask" aria-labelledby="h-ask">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">Free estimate</p>
+      <h2 id="h-ask">Tell me what needs doing</h2>
+      <ol class="steps" aria-label="How it works">
+        <li><div><b>Tell me what you need.</b><span>A photo of the job and your town help.</span></div></li>
+        <li><div><b>Get a free estimate.</b><span>You know the price before any work starts.</span></div></li>
+        <li><div><b>My family gets it done.</b><span>And we leave it the way we'd want our own place left.</span></div></li>
+      </ol>
+    </div>
+    <form id="jobForm" class="rise" novalidate>
+      <div class="field" id="f-name">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" maxlength="60" placeholder="First name is fine" aria-describedby="e-name">
+        <p class="err" id="e-name">Add your name so I know who's texting.</p>
+      </div>
+      <div class="field" id="f-what">
+        <label for="what">What needs doing?</label>
+        <textarea id="what" name="what" maxlength="600" placeholder="A garage full of boxes, a deck to stain, a house to winterize…" aria-describedby="e-what"></textarea>
+        <p class="err" id="e-what">Tell me a little about the job.</p>
+      </div>
+      <div class="field">
+        <label for="where">Your town <small>(optional)</small></label>
+        <input type="text" id="where" name="where" autocomplete="address-level2" maxlength="60" placeholder="Your town">
+      </div>
+      <fieldset class="field">
+        <legend>When do you need it? <small>(optional)</small></legend>
+        <div class="chips">
+          <input type="radio" name="when" id="w1" value="As soon as you can"><label for="w1">As soon as you can</label>
+          <input type="radio" name="when" id="w2" value="This month"><label for="w2">This month</label>
+          <input type="radio" name="when" id="w3" value="Whenever works"><label for="w3">I'm flexible</label>
+        </div>
       </fieldset>
-      <fieldset>
-        <legend>Inside</legend>
-        <label class="row"><input type="checkbox" value="Deep house cleaning"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Deep house cleaning</label>
-        <label class="row"><input type="checkbox" value="Windows and blinds"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Windows and blinds</label>
-        <label class="row"><input type="checkbox" value="Carpet shampoo"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Carpet shampooing</label>
-        <label class="row"><input type="checkbox" value="Wax and buff floors"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Floor wax and buff</label>
-        <label class="row"><input type="checkbox" value="Interior painting"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Interior painting</label>
-      </fieldset>
-      <fieldset>
-        <legend>Outside</legend>
-        <label class="row"><input type="checkbox" value="Power washing"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span><span>Power washing<span class="sub">Houses, decks, concrete, fences</span></span></label>
-        <label class="row"><input type="checkbox" value="Sand and stain deck"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Deck sanding and staining</label>
-        <label class="row"><input type="checkbox" value="Driveway seal coating"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Driveway seal coating</label>
-        <label class="row"><input type="checkbox" value="EP Henry paver sealing"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>EP Henry paver sealing</label>
-        <label class="row"><input type="checkbox" value="Exterior painting"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Exterior painting</label>
-        <label class="row"><input type="checkbox" value="Tree service / stump grinding"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Tree service and stump grinding</label>
-        <label class="row"><input type="checkbox" value="Boat bottom painting"><span class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></span>Boat bottom painting</label>
-      </fieldset>
+      <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to William</button>
+      <p class="after">Opens your messages with this written out. You can add a photo there.</p>
+      <div class="sent" id="sent" role="status" hidden>
+        <p>Didn't open your messages? Tap the button again, or copy your message and text it to <a href="tel:+16096727518">609-672-7518</a>.</p>
+        <button type="button" class="btn btn-line" id="copyMsg">Copy message</button>
+        <textarea id="msgText" readonly aria-label="Your message to William" hidden></textarea>
+      </div>
     </form>
-    <div class="send">
-      <p class="picked" id="picked" aria-live="polite">Nothing picked yet.</p>
-      <a class="btn btn-fill" id="sendList" href="sms:+16096727518"><svg class="i" aria-hidden="true"><use href="#i-text"/></svg><span>Text William the list</span></a>
-      <p class="or">Rather talk? Call <a href="tel:+16096727518">609-672-7518</a></p>
-    </div>
   </div>
 </section>
 
-<div class="seam before-pane" data-from="#eaf1f8" data-to="#132a46" data-flip aria-hidden="true"></div>
-
-<section class="pane vacant" id="vacant" data-pane="vacant" aria-labelledby="h-vacant">
-  <canvas aria-hidden="true"></canvas>
+<section class="on-navy close" id="close" aria-labelledby="h-close">
   <div class="wrap">
-    <div class="copy" data-clear>
-      <h2 id="h-vacant" class="glow">Empty house? I'll look after&nbsp;it.</h2>
-      <p class="glow">Foreclosed or just sitting empty, I'll clean it out, re-key the locks and winterize it before the first freeze, and look after it like it's my own.</p>
-      <a class="btn btn-fill" data-sms="Hi William, I have an empty house that needs a clean out / re-key / winterizing. The address is " href="sms:+16096727518"><svg class="i" aria-hidden="true"><use href="#i-text"/></svg>Text me about a house</a>
+    <div class="rise">
+      <h2 id="h-close">T&amp;M Clean Out <span class="accent">LLC</span></h2>
+      <p class="who">William Jones and family. Fully insured.</p>
+      <p class="deal"><b>I give discounts to</b>Military · first responders · teachers · seniors · new clients</p>
+      <p class="area">I work around Burlington County, NJ. Not sure I cover your town? Call and ask.</p>
     </div>
-  </div>
-</section>
-
-<div class="seam after-pane" data-from="#2b4a6a" data-to="#eaf1f8" aria-hidden="true"></div>
-
-<section class="band on-ice" id="how" aria-labelledby="h-how">
-  <div class="wrap">
-    <h2 id="h-how">How it works</h2>
-    <ol class="steps">
-      <li><h3>Tell me what you need</h3><p>Text or call me. A photo of the job helps.</p></li>
-      <li><h3>Get a free estimate</h3><p>You know the price before any work starts.</p></li>
-      <li><h3>My family gets it done</h3><p>Fully insured, and we leave it the way we'd want our own place left.</p></li>
-    </ol>
-
-    <div class="proof">
-      <p>I don't post every job, but you can find me on Facebook.</p>
-      <a class="btn fb" href="https://www.facebook.com/groups/1772980119690817/permalink/4636261316696002/" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-fb"/></svg>Find me on Facebook</a>
-    </div>
-
-    <div class="deal">
-      <div>
-        <h3>I give discounts to</h3>
-        <p class="who">Military<span aria-hidden="true">·</span> first responders<span aria-hidden="true">·</span> teachers<span aria-hidden="true">·</span> seniors<span aria-hidden="true">·</span> new clients</p>
-      </div>
-      <div class="where">
-        <h3>Where I work</h3>
-        <p>Burlington County, NJ and the towns around it.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="seam before-pane" data-from="#eaf1f8" data-to="#132a46" data-flip aria-hidden="true"></div>
-
-<section class="pane close" id="close" data-pane="close" aria-labelledby="h-close">
-  <canvas aria-hidden="true"></canvas>
-  <div class="wrap">
-    <div data-clear>
-      <h2 id="h-close" class="glow">T&amp;M Clean Out LLC</h2>
-      <p class="glow">One garage or a whole house, inside or out. Tell me what needs doing and I'll get you a free estimate.</p>
-      <a class="btn btn-fill" data-sms="Hi William, I found T&M Clean Out online. I'd like a free estimate. " href="sms:+16096727518"><svg class="i" aria-hidden="true"><use href="#i-text"/></svg>Text for a free estimate</a>
-    </div>
+    <a class="bigtel rise" href="tel:+16096727518"><svg aria-hidden="true"><use href="#i-phone"/></svg>609-672-7518</a>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <div><b>T&amp;M Clean Out LLC</b><br>William Jones, owner. Family owned and fully insured.<br>Burlington County, NJ</div>
-    <ul>
-      <li><a href="tel:+16096727518">609-672-7518</a></li>
-      <li><a href="tel:+16093313190">609-331-3190</a></li>
-      <li><a href="mailto:tmcleanup@gmail.com">tmcleanup@gmail.com</a></li>
-    </ul>
-    <ul>
-      <li><a href="https://www.facebook.com/groups/1772980119690817/permalink/4636261316696002/" rel="noopener">Facebook</a></li>
-      <li class="copy">© 2026 T&amp;M Clean Out LLC</li>
-    </ul>
+    <span>T&amp;M Clean Out LLC · William Jones · Burlington County, NJ · <span class="nw">609-672-7518</span> · <span class="nw">609-331-3190</span></span>
+    <nav aria-label="Elsewhere">
+      <a href="mailto:tmcleanup@gmail.com">tmcleanup@gmail.com</a>
+      <a href="https://www.facebook.com/groups/1772980119690817/permalink/4636261316696002/" rel="noopener">Facebook</a>
+    </nav>
   </div>
 </footer>
 
+<a class="float sms" id="float" data-job="" href="sms:+16096727518" aria-label="Text William"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
+
 <script>
-/* ===== SMS links: encode the pre-filled body once ===== */
+/* ===== Config ===== */
+var CONFIG = {
+  PHONE: '+16096727518',
+  FLOAT: true  // the floating text circle; false removes it
+};
+document.documentElement.classList.add('js');
+
+/* ===== Text links: every .sms link opens a pre-filled text naming its job ===== */
 (function(){
-  var NUM = 'sms:+16096727518';
-  document.querySelectorAll('[data-sms]').forEach(function(a){
-    a.href = NUM + '?&body=' + encodeURIComponent(a.getAttribute('data-sms'));
+  function body(job){
+    return job
+      ? 'Hi William! I found your website. I\'d like a free estimate for '+job+'.\nTown: \nWhen: '
+      : 'Hi William! I found your website. I\'d like a free estimate.\nJob: \nTown: \nWhen: ';
+  }
+  [].forEach.call(document.querySelectorAll('a.sms'),function(a){
+    a.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(body(a.getAttribute('data-job')));
   });
-})();
-
-/* ===== Estimate picker: ticked services become the text ===== */
-(function(){
-  var NUM = 'sms:+16096727518';
-  var boxes = Array.prototype.slice.call(document.querySelectorAll('#picker input'));
-  var out = document.getElementById('picked');
-  var send = document.getElementById('sendList');
-  function update(){
-    var picked = boxes.filter(function(b){ return b.checked; }).map(function(b){ return b.value; });
-    var body;
-    if (picked.length){
-      out.textContent = picked.length === 1 ? '1 job picked: ' + picked[0] + '.' : picked.length + ' jobs picked.';
-      body = "Hi William, I'd like a free estimate for:\n- " + picked.join('\n- ') + '\nMy town: ';
-    } else {
-      out.textContent = 'Nothing picked yet.';
-      body = "Hi William, I found T&M Clean Out online. I'd like a free estimate. ";
-    }
-    send.href = NUM + '?&body=' + encodeURIComponent(body);
-  }
-  boxes.forEach(function(b){ b.addEventListener('change', update); });
-  update();
-})();
-
-/* ===== Shared animation loop: runs only while something animated is on screen ===== */
-var Loop = (function(){
-  var jobs = [], raf = 0, last = 0;
-  function tick(now){
-    var dt = Math.min(0.05, (now - (last || now)) / 1000); last = now;
-    var any = false;
-    for (var i = 0; i < jobs.length; i++) if (jobs[i].visible && !jobs[i].dead){
-      try { jobs[i].step(dt, now / 1000); any = true; }
-      catch (err){ jobs[i].dead = true; }   // e.g. iOS out of canvas memory: that pane keeps its CSS gradient, the rest keep moving
-    }
-    raf = any ? requestAnimationFrame(tick) : 0;
-    if (!any) last = 0;
-  }
-  function wake(){ if (!raf) raf = requestAnimationFrame(tick); }
-  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){
-    es.forEach(function(e){ e.target.__job.visible = e.isIntersecting; });
-    wake();
-  }, {rootMargin:'80px'}) : null;
-  return { add: function(el, step){
-    var job = {step:step, visible:!io}; el.__job = job; jobs.push(job);
-    if (io) io.observe(el); wake();
-  }, wake: wake };
-})();
-var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-/* ===== Frosted pane: frost ferns grow in from the edges, wipe clear, drops run, frost regrows ===== */
-(function(){
-  // Tunables
-  var GROW = 0.28;        // regrow rate per second toward the frost line (higher = faster)
-  var FIRST_GROW = 1.1;   // faster grow on load so the frost visibly creeps in
-  var WET_DRY = 0.22;     // how fast wiped glass dries and lets frost back (per second)
-  var BRUSH_PHONE = 34, BRUSH_DESK = 48;
-  var WOBBLE = 0.13;      // how much the frost line breathes
-  var MAX_DROPS_PHONE = 8, MAX_DROPS_DESK = 16;
-  var GHOST_IDLE = 5;     // seconds of no touch before the pane wipes itself again
-  var STROKE_T = 1.2, STROKES = 3, PAUSE = 1.6;   // ghost wipe: seconds per stroke, strokes per pass, rest so the drops run
-  var BLUR = 'filter' in CanvasRenderingContext2D.prototype;   // softens the low-res mask; Safari <18 falls back to bilinear
-
-  function rng(seed){ return function(){ seed |= 0; seed = seed + 0x6D2B79F5 | 0; var t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
-  function hash(x, y){ var h = Math.sin(x * 127.1 + y * 311.7) * 43758.5453; return h - Math.floor(h); }
-  function vnoise(x, y){
-    var xi = Math.floor(x), yi = Math.floor(y), xf = x - xi, yf = y - yi;
-    var u = xf * xf * (3 - 2 * xf), v = yf * yf * (3 - 2 * yf);
-    var a = hash(xi, yi), b = hash(xi + 1, yi), c = hash(xi, yi + 1), d = hash(xi + 1, yi + 1);
-    return (a + (b - a) * u + (c - a) * v + (a - b - c + d) * u * v) * 2 - 1;
-  }
-  function fbm(x, y){ return vnoise(x, y) * 0.55 + vnoise(x * 2.1, y * 2.1) * 0.3 + vnoise(x * 4.3, y * 4.3) * 0.15; }
-  function smooth(a, b, x){ x = Math.max(0, Math.min(1, (x - a) / (b - a))); return x * x * (3 - 2 * x); }
-
-  // What's behind the glass: a winter dusk street
-  var SCENES = {
-    hero:   {seed: 7,  houses: true,  reach: 0.30},
-    vacant: {seed: 19, houses: true,  reach: 0.26},
-    close:  {seed: 31, houses: true,  reach: 0.28}
-  };
-
-  function paintScene(g, w, h, s){
-    var r = rng(s.seed);
-    var sky = g.createLinearGradient(0, 0, 0, h);
-    sky.addColorStop(0, '#132a46'); sky.addColorStop(0.6, '#1e3d60'); sky.addColorStop(1, '#2b4a6a');
-    g.fillStyle = sky; g.fillRect(0, 0, w, h);
-    var glow = g.createRadialGradient(w * 0.72, h * 0.95, 0, w * 0.72, h * 0.95, Math.max(w, h) * 0.6);
-    glow.addColorStop(0, 'rgba(226,168,60,.20)'); glow.addColorStop(1, 'rgba(226,168,60,0)');
-    g.fillStyle = glow; g.fillRect(0, 0, w, h);
-    for (var i = 0; i < w * h / 9000; i++){ g.fillStyle = 'rgba(234,241,248,' + (0.25 + r() * 0.5) + ')'; g.fillRect(r() * w, r() * h * 0.5, 1.2, 1.2); }
-    if (!s.houses) return;
-    var phone = w < 700, base = h * (phone ? 0.97 : 0.95), unit = phone ? w / 5 : Math.max(46, Math.min(90, w / 9));
-    [[0.62, '#203d5d', 0.8], [1, '#0f2136', 1]].forEach(function(layer){
-      var k = layer[0], x = -r() * unit, y0 = base - (1 - k) * h * 0.05;
-      while (x < w){
-        var hw = unit * (0.9 + r() * 0.9) * k, wall = unit * (0.45 + r() * 0.35) * k, roof = hw * (0.32 + r() * 0.18);
-        g.fillStyle = layer[1];
-        g.beginPath(); g.moveTo(x, y0); g.lineTo(x, y0 - wall); g.lineTo(x + hw / 2, y0 - wall - roof); g.lineTo(x + hw, y0 - wall); g.lineTo(x + hw, y0); g.closePath(); g.fill();
-        if (r() < 0.5) g.fillRect(x + hw * 0.68, y0 - wall - roof * 0.9, hw * 0.09, roof * 0.7);
-        // windows: most dark, a few lit gold
-        var cols = hw > unit ? 3 : 2;
-        for (var c = 0; c < cols; c++){
-          var wx = x + hw * (0.18 + c * (0.64 / (cols - 1 || 1))) - hw * 0.06, wy = y0 - wall * 0.66, ww = hw * 0.12, wh = wall * 0.3;
-          var lit = r() < (layer[2] === 1 ? (phone ? 0.5 : 0.32) : 0.18);
-          if (lit){
-            var lg = g.createRadialGradient(wx + ww / 2, wy + wh / 2, 0, wx + ww / 2, wy + wh / 2, ww * 2.4);
-            lg.addColorStop(0, 'rgba(242,182,64,.35)'); lg.addColorStop(1, 'rgba(242,182,64,0)');
-            g.fillStyle = lg; g.fillRect(wx - ww * 2, wy - wh * 2, ww * 5, wh * 5);
-            g.fillStyle = 'rgba(242,186,76,' + (0.7 + r() * 0.3) * layer[2] + ')';
-          } else g.fillStyle = 'rgba(9,22,38,.55)';
-          g.fillRect(wx, wy, ww, wh);
-        }
-        x += hw + unit * (0.08 + r() * 0.3) * k;
-      }
-    });
-    // snow on the ground
-    var snow = g.createLinearGradient(0, base, 0, h);
-    snow.addColorStop(0, '#6f8cab'); snow.addColorStop(1, '#5a7898');
-    g.fillStyle = snow; g.beginPath(); g.moveTo(0, base);
-    for (var sx = 0; sx <= w; sx += 20) g.lineTo(sx, base - 3 - fbm(sx * 0.01, 3) * 4);
-    g.lineTo(w, h); g.lineTo(0, h); g.closePath(); g.fill();
-  }
-
-  // Frost texture: haze, grain and branching fern crystals, drawn once per size
-  // Two layers: fern crystals lead the frost front over clear glass, the haze fills in behind them
-  function paintFrost(g, hz, w, h, seed){
-    var r = rng(seed * 3 + 1);
-    var phone = w < 700;
-    hz.fillStyle = phone ? 'rgba(226,236,247,.58)' : 'rgba(222,233,245,.6)'; hz.fillRect(0, 0, w, h);
-    for (var i = 0; i < w * h / 14; i++){
-      var a = r(); hz.fillStyle = a < 0.5 ? 'rgba(255,255,255,' + (0.08 + a * 0.3) + ')' : 'rgba(160,185,210,' + (a - 0.5) * 0.25 + ')';
-      hz.fillRect(r() * w, r() * h, 1 + r(), 1 + r());
-    }
-    for (var i2 = 0; i2 < w * h / 60; i2++){ g.fillStyle = 'rgba(255,255,255,' + (0.15 + r() * 0.35) + ')'; g.fillRect(r() * w, r() * h, 1, 1); }
-    g.lineCap = 'round';
-    function branch(x, y, ang, len, depth, wide){
-      var steps = Math.max(2, Math.round(len / 7)), px = x, py = y, bend = (r() - 0.5) * 0.05;
-      g.beginPath(); g.moveTo(x, y);
-      var pts = [];
-      for (var s = 1; s <= steps; s++){
-        ang += bend + (r() - 0.5) * 0.12;
-        px += Math.cos(ang) * len / steps; py += Math.sin(ang) * len / steps;
-        g.lineTo(px, py); pts.push([px, py, ang]);
-      }
-      g.lineWidth = wide ? (0.8 + depth * 0.9) * 4 : 0.6 + depth * 0.55;
-      g.strokeStyle = wide ? 'rgba(255,255,255,.06)' : 'rgba(255,255,255,' + (0.45 + depth * 0.12) + ')';
-      g.stroke();
-      if (depth <= 0) return;
-      for (var k = 1; k < pts.length; k += 1 + (r() < 0.4 ? 1 : 0)){
-        var p = pts[k], t = 1 - k / pts.length, sub = len * (0.22 + t * 0.32);
-        branch(p[0], p[1], p[2] - 1.05 - (r() - 0.5) * 0.25, sub, depth - 1, wide);
-        if (r() < 0.85) branch(p[0], p[1], p[2] + 1.05 + (r() - 0.5) * 0.25, sub, depth - 1, wide);
-      }
-    }
-    // phones: many small ferns knit into frost; a few big ones read as stamps
-    var n = phone ? w * h / 2400 : Math.max(26, Math.min(110, w * h / 9000)), ferns = [];
-    for (var f = 0; f < n; f++){
-      // seed points along the edges, pointing inward
-      var q = r(), side = phone ? (q < 0.6 ? 0 : q < 0.7 ? 1 : q < 0.85 ? 2 : 3) : q * 4 | 0, x, y, ang;
-      if (side === 0){ x = r() * w; y = h + 4; ang = -Math.PI / 2; }
-      else if (side === 1){ x = r() * w; y = -4; ang = Math.PI / 2; }
-      else if (side === 2){ x = -4; y = r() * h; ang = 0; }
-      else { x = w + 4; y = r() * h; ang = Math.PI; }
-      if (side === 0 && r() < 0.5) y = h - r() * h * 0.25;
-      ferns.push([x, y, ang + (r() - 0.5) * 1.3, Math.min(w, h) * (phone ? 0.06 + r() * 0.12 : 0.12 + r() * 0.22)]);
-    }
-    ferns.forEach(function(F){ branch(F[0], F[1], F[2], F[3], 2, true); });
-    ferns.forEach(function(F){ branch(F[0], F[1], F[2], F[3], 2, false); });
-  }
-
-  function Pane(section){
-    var canvas = section.querySelector('canvas'), ctx = canvas.getContext('2d');
-    var cfg = SCENES[section.getAttribute('data-pane')] || SCENES.hero;
-    var isHero = section.getAttribute('data-pane') === 'hero';
-    var hint = section.querySelector('.hint');
-    var W = 0, H = 0, dpr = 1, cell = 6, gw = 0, gh = 0;
-    if (!ctx) return;
-    function mk(){ return document.createElement('canvas'); }
-    var backEl = mk(), frost = mk(), haze = mk(), work = mk(), hwork = mk(), mask = mk(), maskH = mk(), soft = mk();   // made once, resized on rebuild (iOS frees canvas memory late)
-    var wctx, hctx, mctx, img, mhctx, imgH, sctx;
-    var base, cov, wet, phase, grain, fern, ghostY = 0, ghostMaxX = 0;
-    var drops = [], brush = null, lastBrush = null, touched = -99, age = 0, ptr = {x:0, y:0, on:false, type:''};
-
-    backEl.setAttribute('aria-hidden', 'true'); backEl.style.pointerEvents = 'none'; canvas.parentNode.insertBefore(backEl, canvas);
-
-    function build(){
-      var w = Math.round(section.clientWidth), h = Math.round(section.clientHeight);
-      if (w === W && h === H) return false;          // phones fire resize when the address bar moves
-      W = w; H = h;
-      dpr = Math.min(window.devicePixelRatio || 1, W < 1000 ? 1.5 : 1.25, Math.sqrt(2.0e6 / (W * H)));
-      canvas.width = W * dpr; canvas.height = H * dpr;
-      function off(c){ c.width = Math.round(W * dpr); c.height = Math.round(H * dpr); var g = c.getContext('2d'); if (!g) throw new Error('no canvas'); g.setTransform(dpr, 0, 0, dpr, 0, 0); return g; }
-      paintScene(off(backEl), W, H, cfg);   // static: drawn once per size
-      paintFrost(off(frost), off(haze), W, H, cfg.seed);
-      wctx = off(work); wctx.setTransform(1, 0, 0, 1, 0, 0);
-      hctx = off(hwork); hctx.setTransform(1, 0, 0, 1, 0, 0);
-      cell = W < 700 ? 4 : 5; gw = Math.ceil(W / cell) + 1; gh = Math.ceil(H / cell) + 1;
-      mask.width = maskH.width = soft.width = gw; mask.height = maskH.height = soft.height = gh;
-      mctx = mask.getContext('2d'); img = mctx.createImageData(gw, gh);
-      mhctx = maskH.getContext('2d'); imgH = mhctx.createImageData(gw, gh); sctx = soft.getContext('2d');
-      var oldCov = cov; base = new Float32Array(gw * gh); cov = new Float32Array(gw * gh); wet = new Float32Array(gw * gh); phase = new Float32Array(gw * gh); grain = new Float32Array(gw * gh); fern = new Float32Array(gw * gh);
-      // keep text on clear glass
-      var sr = section.getBoundingClientRect(), zones = [];
-      function zone(q){ if (q.width) zones.push([q.left - sr.left, q.top - sr.top, q.right - sr.left, q.bottom - sr.top]); }
-      section.querySelectorAll('[data-clear]').forEach(function(el){
-        // the text's own line boxes, so frost can fill the ragged ends of lines
-        var range = document.createRange(); range.selectNodeContents(el);
-        Array.prototype.forEach.call(range.getClientRects(), zone);
-        el.querySelectorAll('.btn').forEach(function(b){ zone(b.getBoundingClientRect()); });
-        if (el.classList.contains('btn')) zone(el.getBoundingClientRect());
-      });
-      var pad = W < 700 ? [8, 30] : [14, 80];
-      // ghost wipe lane: above the hint, and left of it
-      if (hint){ var hq = hint.getBoundingClientRect(); ghostY = hq.top - sr.top; ghostMaxX = hq.left - sr.left; }
-      // fern alpha per cell lets the crystals lead the frost front
-      var fc = document.createElement('canvas'); fc.width = gw; fc.height = gh;
-      var fg = fc.getContext('2d'); fg.drawImage(frost, 0, 0, gw * cell * dpr, gh * cell * dpr, 0, 0, gw, gh);
-      var fd = fg.getImageData(0, 0, gw, gh).data;
-      for (var fi = 0; fi < gw * gh; fi++) fern[fi] = fd[fi * 4 + 3] / 255;
-      var reach = W < 700 ? Math.max(isHero ? 80 : 110, Math.min(isHero ? 160 : 190, Math.min(W, H) * cfg.reach * (isHero ? 1.2 : 1.7))) : Math.max(120, Math.min(360, Math.min(W, H) * cfg.reach * 1.5));
-      for (var j = 0; j < gh; j++) for (var i = 0; i < gw; i++){
-        var x = i * cell, y = j * cell, n = j * gw + i;
-        var ed = Math.min(x, W - x, y * 1.15, (H - y) * (W < 700 ? 0.42 : 0.7));   // heavier along the bottom, lighter at the top
-        var t = 1.15 - ed / reach + fbm(x * 0.006 + cfg.seed, y * 0.006) * 0.5;
-        var cd = Math.min(Math.hypot(x, y), Math.hypot(W - x, y), Math.hypot(x, H - y), Math.hypot(W - x, H - y));
-        t = Math.max(t, 1.1 - cd / (reach * 1.7));
-        var zf = 1;
-        for (var z = 0; z < zones.length; z++){
-          var Z = zones[z], dx = Math.max(Z[0] - x, 0, x - Z[2]), dy = Math.max(Z[1] - y, 0, y - Z[3]);
-          zf = Math.min(zf, smooth(pad[0], pad[1], Math.hypot(dx, dy) + fbm(x * 0.02 + 5, y * 0.02) * pad[0] * 2));
-        }
-        base[n] = Math.max(0, Math.min(1, t)) * zf;
-        phase[n] = (fbm(x * 0.012, y * 0.012 + 9) + 1) * Math.PI * 2;
-        grain[n] = fbm(x * 0.07 + 3, y * 0.07) * 0.14;   // feathery, crystalline front
-      }
-      if (REDUCED) cov.set(base);
-      age = oldCov ? 99 : 0;
-      if (oldCov) cov.set(base);
-      return true;
-    }
-
-    function wipe(x, y, R, wetAmt){
-      if (wetAmt === undefined) wetAmt = 1;
-      var i0 = Math.max(0, ((x - R) / cell) | 0), i1 = Math.min(gw - 1, ((x + R) / cell) | 0);
-      var j0 = Math.max(0, ((y - R) / cell) | 0), j1 = Math.min(gh - 1, ((y + R) / cell) | 0);
-      var melted = 0;
-      for (var j = j0; j <= j1; j++) for (var i = i0; i <= i1; i++){
-        var n = j * gw + i, d = Math.hypot(i * cell - x, j * cell - y) / R + grain[n] * 1.6;   // the frost breaks up the wipe's edge
-        if (d >= 1) continue;
-        var keep = smooth(0.55, 1, d);
-        melted += cov[n] * (1 - keep);
-        cov[n] *= keep; wet[n] = Math.max(wet[n], (1 - d * d) * wetAmt);
-      }
-      return melted;
-    }
-
-    function step(dt, t){
-      build();
-      age += dt;
-      // pointer -> scene coordinates, read every frame (the page scrolls under the finger)
-      var R = W < 700 ? BRUSH_PHONE : BRUSH_DESK, cur = null;
-      if (ptr.on){
-        var rect = canvas.getBoundingClientRect();
-        var px = ptr.x - rect.left, py = ptr.y - rect.top;
-        if (px > -R && py > -R && px < W + R && py < H + R) cur = [px, py];
-      }
-      if (cur) touched = t;
-      else if (isHero && age > 1.2 && t - touched > GHOST_IDLE){
-        // the pane wipes itself until someone touches it
-        var gt = t - touched - GHOST_IDLE, pass = STROKE_T * STROKES + PAUSE, cyc = Math.floor(gt / pass), ph = gt - cyc * pass;
-        if (ph < STROKE_T * STROKES){
-          var sn = Math.floor(ph / STROKE_T), pr = ph / STROKE_T - sn, u = 0.5 - 0.5 * Math.cos(Math.PI * pr);   // slows at each turn like a hand
-          if (sn % 2) u = 1 - u;
-          var A = W * (W < 700 ? 0.42 : 0.26), lane = ghostMaxX ? ghostMaxX - R : W;
-          var cx = Math.min(lane - A / 2, W * (0.42 + 0.18 * Math.sin(cyc * 1.7)));
-          var cy = Math.min(H * (W < 700 ? 0.8 : 0.78), (ghostY || H) - R * 1.2) + sn * R * 0.3 - R * 0.3;
-          cur = [cx - A / 2 + A * u, cy + H * 0.03 * Math.sin(Math.PI * u)];
-          R *= (W < 700 ? 1.15 : 1) * (0.8 + 0.35 * Math.sin(Math.PI * u * 2 + cyc * 2.3) * Math.sin(Math.PI * pr));
-        } else lastBrush = null;
-      }
-      if (hint && touched > 0 && !hint.classList.contains('gone')) hint.classList.add('gone');
-      if (cur){
-        var from = lastBrush || cur, dist = Math.hypot(cur[0] - from[0], cur[1] - from[1]);
-        var n = Math.max(1, Math.ceil(dist / (R * 0.35))), melted = 0;
-        for (var s = 1; s <= n; s++) melted += wipe(from[0] + (cur[0] - from[0]) * s / n, from[1] + (cur[1] - from[1]) * s / n, R);
-        var max = W < 700 ? MAX_DROPS_PHONE : MAX_DROPS_DESK;
-        if (melted > 2 && drops.length < max && Math.random() < Math.min(0.35, melted / 40)){
-          var a = Math.PI * (0.15 + Math.random() * 0.7);   // gather along the lower edge of the wipe
-          drops.push({x: cur[0] + Math.cos(a) * R * 0.85, y: cur[1] + Math.sin(a) * R * 0.75, r: 3 + Math.random() * 3.5, vy: 0, stick: Math.random() * 0.6});
-        }
-        lastBrush = cur;
-      } else lastBrush = null;
-
-      // frost breathes and regrows
-      var grow = 1 - Math.exp(-(age < 3.5 ? FIRST_GROW : GROW) * dt), dry = WET_DRY * dt;
-      for (var k = 0, L = cov.length; k < L; k++){
-        var b = base[k]; if (b <= 0 && cov[k] <= 0){ continue; }
-        var edge = 4 * b * (1 - b);
-        var tt = b + edge * WOBBLE * (Math.sin(t * 1.5 + phase[k]) * 0.6 + Math.sin(t * 2.4 - phase[k] * 1.7) * 0.4);
-        if (wet[k] > 0){ wet[k] = Math.max(0, wet[k] - dry); }
-        var c = cov[k];
-        cov[k] = c < tt ? c + (tt - c) * grow * (1 - wet[k]) : c + (tt - c) * Math.min(1, dt * 1.5);
-      }
-
-      // drops slide down in stick-slip, clearing a trail
-      for (var d = drops.length - 1; d >= 0; d--){
-        var p = drops[d];
-        if (p.stick > 0){ p.stick -= dt; p.vy = 0; }
-        else {
-          p.vy = Math.min(p.vy + (p.r > 3.4 ? 260 : 120) * dt, 40 + p.r * 22);
-          p.y += p.vy * dt; p.x += Math.sin(p.y * 0.08 + p.r) * 0.25;
-          if (Math.random() < dt * 0.9) p.stick = 0.1 + Math.random() * 0.5;
-          var gi = (p.x / cell) | 0, gj = (p.y / cell) | 0;
-          if (gi >= 0 && gi < gw && gj >= 0 && gj < gh){ var q = gj * gw + gi; if (cov[q] > 0.25) p.r = Math.min(6.5, p.r + cov[q] * 0.08); }
-          wipe(p.x, p.y - p.r, Math.max(cell * 0.8, p.r * 0.55), 0.2);   // a narrow trail that fogs back quickly
-        }
-        if (p.y > H + 12) drops.splice(d, 1);
-      }
-      render();
-    }
-
-    function render(){
-      // mask from coverage
-      var data = img.data, dataH = imgH.data;
-      for (var k = 0, L = cov.length; k < L; k++){
-        var c = cov[k] + grain[k];
-        data[k * 4 + 3] = smooth(0.18, 0.42, c + 0.22 * fern[k]) * 255;   // spines poke ahead of the haze
-        dataH[k * 4 + 3] = smooth(0.52, 0.72, c - 0.08 * fern[k]) * 255;   // haze fills in firmly, never a grey smoke
-      }
-      mctx.putImageData(img, 0, 0); mhctx.putImageData(imgH, 0, 0);
-      [[wctx, frost, mask], [hctx, haze, maskH]].forEach(function(L){
-        // soften the small mask (cheap), then scale it up with bilinear smoothing
-        var m = L[2];
-        if (BLUR){ sctx.globalCompositeOperation = 'copy'; sctx.filter = 'blur(0.7px)'; sctx.drawImage(L[2], 0, 0); sctx.filter = 'none'; m = soft; }
-        var g = L[0];
-        g.globalCompositeOperation = 'copy'; g.drawImage(L[1], 0, 0);
-        g.globalCompositeOperation = 'destination-in'; g.imageSmoothingEnabled = true; g.imageSmoothingQuality = 'high';
-        g.drawImage(m, 0, 0, gw, gh, 0, 0, gw * cell * dpr, gh * cell * dpr);
-        g.globalCompositeOperation = 'source-over';
-      });
-      ctx.setTransform(1, 0, 0, 1, 0, 0);
-      ctx.clearRect(0, 0, canvas.width, canvas.height); ctx.drawImage(hwork, 0, 0); ctx.drawImage(work, 0, 0);
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      for (var d = 0; d < drops.length; d++){
-        var p = drops[d], stretch = 1 + Math.min(p.vy / 160, 0.7);
-        // water lenses the scene upside down: light gathers low inside, the top rim shades
-        var cy = p.y - p.r * (stretch - 1);
-        var body = ctx.createLinearGradient(0, cy - p.r * stretch, 0, cy + p.r * stretch);
-        body.addColorStop(0, 'rgba(8,22,40,.38)'); body.addColorStop(0.45, 'rgba(120,150,180,.10)'); body.addColorStop(1, 'rgba(234,241,248,.34)');
-        ctx.fillStyle = body;
-        ctx.beginPath(); ctx.ellipse(p.x, cy, p.r, p.r * stretch, 0, 0, Math.PI * 2); ctx.fill();
-      }
-    }
-
-    // Input: mouse hover wipes on desktop; on touch, a drag in any direction wipes (hero), sideways drags elsewhere
-    window.addEventListener('pointermove', function(e){
-      if (e.pointerType === 'mouse' || ptr.on){ ptr.x = e.clientX; ptr.y = e.clientY; ptr.on = true; ptr.type = e.pointerType; Loop.wake(); }
-    }, {passive:true});
-    canvas.addEventListener('pointerdown', function(e){ ptr.x = e.clientX; ptr.y = e.clientY; ptr.on = true; ptr.type = e.pointerType; Loop.wake(); });
-    function end(e){ if (e.pointerType !== 'mouse') ptr.on = false; }
-    window.addEventListener('pointerup', end, {passive:true});
-    window.addEventListener('pointercancel', end, {passive:true});
-    document.documentElement.addEventListener('mouseleave', function(){ ptr.on = false; });
-    window.addEventListener('blur', function(){ ptr.on = false; });
-
-    if (REDUCED){ try { build(); render(); } catch (e){} window.addEventListener('resize', function(){ try { if (build()) render(); } catch (e){} }); return; }
-    Loop.add(section, step);
-  }
-
-  function start(){ document.querySelectorAll('[data-pane]').forEach(Pane); }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
-})();
-
-/* ===== Seams: a snowdrift where a pane ends, an icicle eave where one begins ===== */
-(function(){
-  var SPEED = 1.0;            // Ellie likes these lively
-  var ICICLES = 13;           // per 1000px of eave
-  var MAX_FALLING = innerWidth < 700 ? 6 : 12;
-  var NS = 'http://www.w3.org/2000/svg';
-  function hash(x){ var h = Math.sin(x * 127.1) * 43758.5453; return h - Math.floor(h); }
-  function noise(x){ var i = Math.floor(x), f = x - i, u = f * f * (3 - 2 * f); return (hash(i) + (hash(i + 1) - hash(i)) * u) * 2 - 1; }
-  function fbm(x){ return noise(x) * 0.6 + noise(x * 2.3 + 7) * 0.28 + noise(x * 5.1 + 3) * 0.12; }
-  document.querySelectorAll('.seam').forEach(function(seam){
-    var from = seam.getAttribute('data-from'), to = seam.getAttribute('data-to');
-    var after = seam.classList.contains('after-pane');   // fill below the edge; above it the pane shows through
-    var svg = document.createElementNS(NS, 'svg'); svg.setAttribute('preserveAspectRatio', 'none');
-    var fill = document.createElementNS(NS, 'path'); fill.setAttribute('fill', after ? to : from);
-    var ice = document.createElementNS(NS, 'path'); ice.setAttribute('fill', 'url(#icefade)');
-    var drip = document.createElementNS(NS, 'g'); drip.setAttribute('fill', 'rgba(234,241,248,.85)');
-    svg.appendChild(fill);
-    if (!after){
-      var defs = document.createElementNS(NS, 'defs');
-      defs.innerHTML = '<linearGradient id="icefade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eaf1f8"/><stop offset="1" stop-color="#b9cde2"/></linearGradient>';
-      svg.insertBefore(defs, fill); svg.appendChild(ice); svg.appendChild(drip);
-    }
-    seam.appendChild(svg);
-    var seed = Math.random() * 100, W = 0, H = 0, cicles = [], falling = [];
-    function edge(x, t){
-      if (after) return H * 0.5 + H * 0.12 * fbm(x * 0.008 + t * 0.35 * SPEED + seed) + H * 0.06 * Math.sin(x * 0.02 - t * 1.6 * SPEED);
-      return H * 0.34 + H * 0.12 * fbm(x * 0.012 + t * 0.05 + seed);   // snow load on the eave barely creeps
-    }
-    function layout(){
-      cicles = [];
-      var n = Math.round(W / 1000 * ICICLES * 1.6) + 3;
-      for (var i = 0; i < n; i++){
-        var x = (i + hash(i + seed)) * W / n;
-        if (noise(x * 0.006 + seed) < -0.15) continue;           // gaps between clusters
-        var l = hash(i * 3.1 + seed); l = 3 + l * l * l * 34;      // mostly stubs, a few long ones
-        cicles.push({x: x, len: l, wid: 2.5 + l * 0.16 + hash(i * 5.7 + seed) * 2, bend: (hash(i * 9.3) - 0.5) * l * 0.12, grow: 1.2 + hash(i * 2.2 + seed) * 2.3, age: hash(i * 4.4) * 2, drips: l > 12});
-      }
-    }
-    function draw(t, dt){
-      var w = seam.clientWidth, h = seam.clientHeight;
-      if (w !== W || h !== H){ W = w; H = h; svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h); layout(); }
-      if (!W) return;
-      var d = '';
-      for (var x = 0; x <= w + 20; x += 16) d += (x ? ' L' : 'M') + x + ' ' + edge(x, t).toFixed(1);
-      d += after ? ' L' + (w + 20) + ' ' + h + ' L0 ' + h + ' Z' : ' L' + (w + 20) + ' 0 L0 0 Z';
-      fill.setAttribute('d', d);
-      if (after) return;
-      // icicles hang from the eave; each tip grows a drop that lets go
-      var id = '', dd = '';
-      cicles.forEach(function(c){
-        var y0 = edge(c.x, t) - 1, tipX = c.x + c.bend, tipY = y0 + c.len;
-        id += 'M' + (c.x - c.wid / 2).toFixed(1) + ' ' + y0.toFixed(1) + ' Q' + (c.x - c.wid * 0.2 + c.bend * 0.5).toFixed(1) + ' ' + (y0 + c.len * 0.55).toFixed(1) + ' ' + tipX.toFixed(1) + ' ' + tipY.toFixed(1) +
-              ' Q' + (c.x + c.wid * 0.25 + c.bend * 0.5).toFixed(1) + ' ' + (y0 + c.len * 0.5).toFixed(1) + ' ' + (c.x + c.wid / 2).toFixed(1) + ' ' + y0.toFixed(1) + 'Z';
-        c.age += dt;
-        var k = Math.min(1, c.age / c.grow), r = 0.6 + k * 1.6;
-        if (!c.drips) return;
-        if (k >= 1 && falling.length < MAX_FALLING){ falling.push({x: tipX, y: tipY + r, v: 0, r: r}); c.age = 0; c.grow = 1.2 + Math.random() * 2.3; }
-        else dd += 'M' + (tipX - r).toFixed(1) + ' ' + (tipY + r * 0.6).toFixed(1) + 'a' + r.toFixed(2) + ' ' + (r * 1.2).toFixed(2) + ' 0 1 0 ' + (r * 2).toFixed(2) + ' 0a' + r.toFixed(2) + ' ' + (r * 1.2).toFixed(2) + ' 0 1 0 ' + (-r * 2).toFixed(2) + ' 0Z';
-      });
-      for (var i = falling.length - 1; i >= 0; i--){
-        var f = falling[i]; f.v += 600 * dt; f.y += f.v * dt;
-        if (f.y > h + 4){ falling.splice(i, 1); continue; }
-        dd += 'M' + (f.x - f.r).toFixed(1) + ' ' + f.y.toFixed(1) + 'a' + f.r.toFixed(2) + ' ' + (f.r * 1.4).toFixed(2) + ' 0 1 0 ' + (f.r * 2).toFixed(2) + ' 0a' + f.r.toFixed(2) + ' ' + (f.r * 1.4).toFixed(2) + ' 0 1 0 ' + (-f.r * 2).toFixed(2) + ' 0Z';
-      }
-      ice.setAttribute('d', id);
-      drip.innerHTML = dd ? '<path d="' + dd + '"/>' : '';
-    }
-    svg.style.overflow = 'visible';
-    if (REDUCED){ draw(0, 0); window.addEventListener('resize', function(){ draw(0, 0); }); return; }
-    Loop.add(seam, function(dt, t){ draw(t, dt); });
-  });
-})();
-
-/* ===== Picker reward: a puff of frost crystals when a job is ticked ===== */
-(function(){
-  if (REDUCED || !Element.prototype.animate) return;
-  var FLAKES = 6;
-  document.querySelectorAll('#picker input').forEach(function(b){
-    b.addEventListener('change', function(){
-      if (!b.checked) return;
-      var box = b.nextElementSibling;
-      for (var i = 0; i < FLAKES; i++){
-        var f = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        f.setAttribute('class', 'flake'); f.setAttribute('aria-hidden', 'true');
-        f.innerHTML = '<use href="#i-flake"/>';
-        box.appendChild(f);
-        var a = (i / FLAKES) * Math.PI * 2 + Math.random() * 0.6, r = 18 + Math.random() * 12;
-        f.animate([
-          {transform: 'translate(-50%,-50%) scale(.4) rotate(0deg)', opacity: 1},
-          {transform: 'translate(calc(-50% + ' + (Math.cos(a) * r).toFixed(1) + 'px), calc(-50% + ' + (Math.sin(a) * r - 6 + 10).toFixed(1) + 'px)) scale(1) rotate(' + (Math.random() > 0.5 ? 60 : -60) + 'deg)', opacity: 0}
-        ], {duration: 650, easing: 'cubic-bezier(0.16,1,0.3,1)'}).onfinish = function(){ this.effect.target.remove(); };
-      }
+  // a mouse-and-keyboard computer usually can't open sms: links, so there the service rows
+  // and the empty-house button jump to the estimate form with the job written in instead
+  if(!matchMedia('(hover: hover) and (pointer: fine)').matches)return;
+  [].forEach.call(document.querySelectorAll('a.row,#vacantBtn'),function(a){
+    var job=a.getAttribute('data-job');
+    a.href='#ask';
+    a.addEventListener('click',function(){
+      var what=document.getElementById('what');
+      what.value=job.charAt(0).toUpperCase()+job.slice(1);
+      setTimeout(function(){document.getElementById('name').focus({preventScroll:true})},400);
     });
   });
+})();
+
+/* ===== Hero H1 bounce-in: split into letters (JS only, so no-JS and reduced motion keep the plain heading) ===== */
+(function(){
+  var h=document.getElementById('h1');
+  if(!h||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var plain=h.innerHTML,i=0,last=null;
+  h.setAttribute('aria-label',h.textContent.replace(/\s+/g,' ').trim());
+  function split(node,into){
+    [].slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        n.textContent.split(/(\s+)/).forEach(function(part){
+          if(!part)return;
+          if(/^\s+$/.test(part)){into.appendChild(document.createTextNode(' '));return}
+          var w=document.createElement('span');w.className='w';w.setAttribute('aria-hidden','true');
+          for(var k=0;k<part.length;k++){var c=document.createElement('span');c.className='c';c.style.setProperty('--i',i++);c.textContent=part[k];w.appendChild(c);last=c}
+          into.appendChild(w);
+        });
+      }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
+    });
+  }
+  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
+  // once the last letter lands, put the plain heading back so kerning and text selection return
+  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+})();
+
+/* ===== Estimate form: composes a text to William ===== */
+(function(){
+  var form=document.getElementById('jobForm');if(!form)return;
+  function val(id){return document.getElementById(id).value.trim()}
+  function mark(id,bad){var f=document.getElementById(id);f.classList.toggle('bad',bad);f.querySelector('input,textarea').setAttribute('aria-invalid',bad?'true':'false')}
+  form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&e.target.value.trim())f.classList.remove('bad')});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=val('name'),what=val('what'),where=val('where'),w=form.querySelector('input[name=when]:checked');
+    mark('f-name',!name);mark('f-what',!what);
+    if(!name){document.getElementById('name').focus();return}
+    if(!what){document.getElementById('what').focus();return}
+    var msg='Hi William, this is '+name+'. I found your website and I\'d like a free estimate for: '+what.replace(/[.\s]+$/,'')+'.';
+    if(where)msg+='\nTown: '+where;
+    if(w)msg+='\nWhen: '+w.value;
+    var url='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
+    document.getElementById('msgText').value=msg;
+    location.href=url;
+    // if no messages app opened (desktop, some in-app browsers), offer a copy and the number
+    setTimeout(function(){document.getElementById('sent').hidden=false},900);
+  });
+  // copy can be blocked (Facebook's in-app browser): fall back to showing the text, selected
+  document.getElementById('copyMsg').addEventListener('click',function(){
+    var t=document.getElementById('msgText'),btn=this;
+    function show(){t.hidden=false;t.focus();t.select()}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(function(){btn.textContent='Copied'},show)}else show();
+  });
+})();
+
+/* ===== Floating text circle: shows after the hero, hides while another text control is on screen ===== */
+(function(){
+  var fl=document.getElementById('float');if(!fl)return;
+  if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
+  // hidden over the form, the service rows and the empty-house button, which already text William
+  var pastHero=false,inView=[];
+  function sync(){var on=pastHero&&!inView.some(Boolean);fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
+  ['#jobForm','#services .groups','#vacantBtn'].forEach(function(sel,k){
+    inView[k]=false;
+    new IntersectionObserver(function(es){inView[k]=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.querySelector(sel));
+  });
+  sync();
+})();
+
+/* ===== Fade-up: everything is visible at rest; only what starts below the first screen rises 12px in ===== */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('below');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(document.querySelectorAll('.rise'),function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('below');io.observe(el)}});
 })();
 </script>
 </body>
