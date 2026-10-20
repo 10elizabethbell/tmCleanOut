@@ -45,6 +45,15 @@
         "rule": "design-system-color",
         "value": "#1750ad",
         "createdAt": "2026-10-19T14:02:36.567Z"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T01:23:38.895Z",
+        "reason": "Ellie's calm band style (calm-photo-style.md item 2, 2026-10-19): the faint 135deg line texture on deep navy bands is a required house feature"
       }
     ]
   }

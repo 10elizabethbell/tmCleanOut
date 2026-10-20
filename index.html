@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>T&amp;M Clean Out LLC · Clean outs, cleaning and property care · Burlington County, NJ</title>
-<meta name="description" content="William Jones and family: clean outs, deep cleaning, power washing, painting, driveway sealing and winterizing around Burlington County, NJ. Family owned, fully insured, free estimates. 609-672-7518.">
+<meta name="description" content="William Jones: clean outs, deep cleaning, power washing, painting, driveway sealing and winterizing around Burlington County, NJ. Family owned, fully insured, free estimates. 609-672-7518.">
 <meta name="theme-color" content="#f4f6fb">
 <meta property="og:type" content="website">
 <meta property="og:title" content="T&amp;M Clean Out LLC · Cleared out and cleaned up in Burlington County">
-<meta property="og:description" content="Clean outs, deep cleaning, power washing, painting and winterizing from William Jones and family. Fully insured. Free estimates: 609-672-7518.">
+<meta property="og:description" content="Clean outs, deep cleaning, power washing, painting and winterizing from William Jones. Family owned, fully insured. Free estimates: 609-672-7518.">
 <meta property="og:url" content="https://10elizabethbell.github.io/tmCleanOut/">
 <meta property="og:image" content="https://10elizabethbell.github.io/tmCleanOut/og.png">
 <meta property="og:image:width" content="1200">
@@ -101,6 +101,7 @@ section{padding:64px 0}
 .hero-copy{position:relative;z-index:1;display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:72px}
 .hero h1{color:#fff;font-size:clamp(42px,min(11.4vw,13svh),80px);line-height:1.02;max-width:13ch}
 /* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
+.hero h1 .nb{white-space:nowrap}
 .hero h1 .w{display:inline-block;white-space:nowrap}
 .hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
 @keyframes letter-in{to{opacity:1;transform:none}}
@@ -190,6 +191,7 @@ footer .wrap{display:grid;gap:14px}
 .nw{white-space:nowrap}
 footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
 footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none}
+footer a.alt{display:inline-block;min-height:0;padding:11px 0;margin:-11px 0;color:var(--on-dark-soft);text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(255,255,255,.4)}
 
 /* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
 .float{display:none;position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;place-items:center;background:var(--accent);color:var(--ink);box-shadow:0 10px 28px rgba(8,20,36,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
@@ -235,6 +237,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
 .ask-any a:hover{color:var(--accent)}
 input[type=text]:hover,textarea:hover{border-color:var(--focus)}
 .chips label:hover{border-color:var(--focus)}
+.chips input:checked+label:hover{outline:2px solid var(--focus);outline-offset:2px}
 form .btn:hover{outline:2px solid var(--focus);outline-offset:2px}
 .sent p a:hover{color:var(--accent-ink)}
 .bigtel:hover{color:var(--accent)}
@@ -273,8 +276,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="hero" id="hero" aria-labelledby="h1">
   <div class="wrap hero-copy">
     <p class="eyebrow">Clean outs &amp; property care</p>
-    <h1 id="h1">Cleared out and cleaned up in <span class="accent">Burlington County.</span></h1>
-    <p class="promise">I'm <b>William Jones.</b> My family and I treat your house like it's ours.</p>
+    <h1 id="h1">Cleared out and <span class="nb">cleaned up</span> in <span class="accent">Burlington County.</span></h1>
+    <p class="promise">I'm <b>William Jones.</b> I treat your house like it's my own.</p>
     <div class="actions">
       <a class="btn btn-primary" href="#ask">Get a free estimate</a>
       <a class="btn btn-ghost sms" data-job="" href="sms:+16096727518"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text William</a>
@@ -285,8 +288,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="on-paper" aria-labelledby="h-trust">
   <div class="wrap split">
     <div class="rise">
-      <h2 id="h-trust">When you call, you get me.</h2>
-      <p class="lede">It's my name on the flyer and my family on the job, from the garage to the driveway seal.</p>
+      <h2 id="h-trust">Call or text, you get me.</h2>
+      <p class="lede">It's my name on every job, from the garage clean out to the driveway seal.</p>
     </div>
     <ul class="claims">
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4l13 5v9c0 8.5-5.6 15.3-13 18-7.4-2.7-13-9.5-13-18V9z"/><path d="M14 20l4.5 4.5L27 16"/></svg>Fully insured</li>
@@ -294,7 +297,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="6" width="24" height="30" rx="3"/><path d="M15 6V4h10v2M14 16h12M14 23h12M14 30h7"/></svg>Free estimates</li>
     </ul>
     <a class="fb rise" href="https://www.facebook.com/groups/1772980119690817/permalink/4636261316696002/" rel="noopener">
-      <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>See me on Facebook</span>
+      <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>See my post on Facebook</span>
       <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
     </a>
   </div>
@@ -309,7 +312,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </div>
     <div class="groups">
       <div class="group rise">
-        <h3><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h22v14H5z"/><path d="M5 12l3-6h16l3 6M12 18h8"/></svg>Clean outs</h3>
+        <h3><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h22v14H5z"/><path d="M5 12l3-6h16l3 6M12 18h8"/></svg>Clean outs &amp; empty homes</h3>
         <ul class="rows">
           <li><a class="row sms" data-job="a foreclosed home clean out" href="sms:+16096727518">Foreclosed homes<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
           <li><a class="row sms" data-job="a garage clean out" href="sms:+16096727518">Garages<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
@@ -348,9 +351,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="on-light vacant" id="vacant" aria-labelledby="h-vacant">
   <div class="wrap">
     <div class="head rise">
-      <p class="eyebrow">Empty homes</p>
-      <h2 id="h-vacant">Empty house? I'll look after it.</h2>
-      <p class="lede">Foreclosed or just sitting empty, I'll clean it out, re-key the locks and winterize it before the first freeze, and look after it like it's my own.</p>
+      <h2 id="h-vacant">Empty house? Cleared, re-keyed, winterized.</h2>
+      <p class="lede">Foreclosed or just sitting empty, I'll clean it out, re-key the locks and winterize it before the first freeze.</p>
     </div>
     <a class="btn btn-primary sms rise" id="vacantBtn" data-job="an empty house: clean out, re-key and winterizing" href="sms:+16096727518"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text me about a house</a>
   </div>
@@ -362,9 +364,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <p class="eyebrow">Free estimate</p>
       <h2 id="h-ask">Tell me what needs doing</h2>
       <ol class="steps" aria-label="How it works">
-        <li><div><b>Tell me what you need.</b><span>A photo of the job and your town help.</span></div></li>
+        <li><div><b>Tell me what you need.</b><span>Send a photo and your town if you can.</span></div></li>
         <li><div><b>Get a free estimate.</b><span>You know the price before any work starts.</span></div></li>
-        <li><div><b>My family gets it done.</b><span>And we leave it the way we'd want our own place left.</span></div></li>
+        <li><div><b>I get it done.</b><span>Fully insured, start to finish.</span></div></li>
       </ol>
     </div>
     <form id="jobForm" class="rise" novalidate>
@@ -393,7 +395,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to William</button>
       <p class="after">Opens your messages with this written out. You can add a photo there.</p>
       <div class="sent" id="sent" role="status" hidden>
-        <p>Didn't open your messages? Tap the button again, or copy your message and text it to <a href="tel:+16096727518">609-672-7518</a>.</p>
+        <p>Didn't open your messages? Tap the button again, or copy your message and text it to <a class="sms" data-job="" href="sms:+16096727518">609-672-7518</a>.</p>
         <button type="button" class="btn btn-line" id="copyMsg">Copy message</button>
         <textarea id="msgText" readonly aria-label="Your message to William" hidden></textarea>
       </div>
@@ -405,7 +407,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap">
     <div class="rise">
       <h2 id="h-close">Your house, <span class="accent">looked after.</span></h2>
-      <p class="who">T&amp;M Clean Out LLC: William Jones and family, fully insured.</p>
+      <p class="who">T&amp;M Clean Out LLC: William Jones. Family owned and fully insured.</p>
       <p class="deal"><b>I give discounts to</b>Military · first responders · teachers · seniors · new clients</p>
       <p class="area">I work around Burlington County, NJ. Not sure I cover your town? Call and ask.</p>
     </div>
@@ -416,7 +418,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <footer>
   <div class="wrap">
-    <span>T&amp;M Clean Out LLC · William Jones · Burlington County, NJ · <span class="nw">609-672-7518</span> · <span class="nw">609-331-3190</span></span>
+    <span>T&amp;M Clean Out LLC · William Jones · Burlington County, NJ · <span class="nw">609-672-7518</span> · <a class="nw alt" href="tel:+16093313190">609-331-3190</a></span>
     <nav aria-label="Elsewhere">
       <a href="mailto:tmcleanup@gmail.com">tmcleanup@gmail.com</a>
       <a href="https://www.facebook.com/groups/1772980119690817/permalink/4636261316696002/" rel="noopener">Facebook</a>
